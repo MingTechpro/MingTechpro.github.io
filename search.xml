@@ -59,7 +59,7 @@
 <p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356385.png" alt="设置主页标题"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356705.png" alt="设置主页标题"></p>
 <h3 id="设置关于页"><a href="#设置关于页" class="headerlink" title="设置关于页"></a>设置关于页</h3><ul>
 <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。 <code>设置个人介绍</code></li>
-<li>email: <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#99;&#x68;&#x65;&#110;&#112;&#101;&#105;&#109;&#x69;&#x6e;&#x67;&#53;&#50;&#48;&#x30;&#49;&#x40;&#49;&#54;&#x33;&#x2e;&#x63;&#x6f;&#x6d;">&#99;&#x68;&#x65;&#110;&#112;&#101;&#105;&#109;&#x69;&#x6e;&#x67;&#53;&#50;&#48;&#x30;&#49;&#x40;&#49;&#54;&#x33;&#x2e;&#x63;&#x6f;&#x6d;</a> <code>设置自己的邮箱</code></li>
+<li>email: <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#99;&#x68;&#x65;&#x6e;&#x70;&#101;&#105;&#109;&#x69;&#x6e;&#103;&#x35;&#50;&#x30;&#x30;&#x31;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;">&#99;&#x68;&#x65;&#x6e;&#x70;&#101;&#105;&#109;&#x69;&#x6e;&#103;&#x35;&#50;&#x30;&#x30;&#x31;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;</a> <code>设置自己的邮箱</code></li>
 <li>skill_software_keywords: [Java, Python] <code>软件开发标签</code></li>
 <li>skill_j2ee_keywords: <code>J2EE开发标签</code></li>
 <li>skill_mobile_app_keywords: <code>手机开发标签</code></li>
@@ -877,7 +877,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <tr>
 <td style="text-align:center">SMTP_USER</td>
 <td style="text-align:center">[必填]SMTP 服务用户名，及邮箱地址</td>
-<td style="text-align:center"><a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x31;&#50;&#51;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;">&#x31;&#50;&#51;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;</a></td>
+<td style="text-align:center"><a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x31;&#x32;&#51;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#x6d;">&#x31;&#x32;&#51;&#64;&#x71;&#x71;&#x2e;&#99;&#111;&#x6d;</a></td>
 </tr>
 <tr>
 <td style="text-align:center">SMTP_PASS</td>
@@ -892,7 +892,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 <tr>
 <td style="text-align:center">TO_EMAIL</td>
 <td style="text-align:center">自定义博主收件人</td>
-<td style="text-align:center"><a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#99;&#104;&#101;&#110;&#x70;&#101;&#x69;&#x6d;&#105;&#x6e;&#x67;&#x35;&#x32;&#48;&#48;&#49;&#x40;&#49;&#x36;&#x33;&#46;&#99;&#111;&#109;">&#99;&#104;&#101;&#110;&#x70;&#101;&#x69;&#x6d;&#105;&#x6e;&#x67;&#x35;&#x32;&#48;&#48;&#49;&#x40;&#49;&#x36;&#x33;&#46;&#99;&#111;&#109;</a></td>
+<td style="text-align:center"><a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#99;&#104;&#101;&#x6e;&#112;&#101;&#105;&#x6d;&#105;&#110;&#x67;&#53;&#50;&#x30;&#x30;&#x31;&#64;&#x31;&#54;&#51;&#x2e;&#99;&#111;&#109;">&#99;&#104;&#101;&#x6e;&#112;&#101;&#105;&#x6d;&#105;&#110;&#x67;&#53;&#50;&#x30;&#x30;&#x31;&#64;&#x31;&#54;&#51;&#x2e;&#99;&#111;&#109;</a></td>
 </tr>
 </tbody>
 </table>
@@ -1606,7 +1606,7 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
 </li>
 <li><p>三秒后松开短接点，软件就会显示发现一个MASKPROM设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002215096.png" alt="MASKPROM设备"></p>
 </li>
-<li><p>点击 <code>执行</code> 刷入引导程序和底层系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002648086.png" alt="20260607002648086"></p>
+<li><p>点击 <code>执行</code> 刷入引导程序和底层系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002648086.png" alt="执行"></p>
 </li>
 <li><p>待刷好，给设备通上电并插入网线链接路由器</p>
 </li>
@@ -1663,6 +1663,76 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
         <tag>CasaOS</tag>
         <tag>网心云OECT</tag>
         <tag>家庭服务器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网心云OECT刷机指南：刷入 fnOS 打造低功耗私有云</title>
+    <url>/posts/7e43b1c0/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>抽屉里那台 <strong>网心云 OECT</strong>（One Ecosystem Computing Tool）又翻出来了。RK3566 四核 A55、4GB 内存、8GB eMMC，还带 2.5 寸 SATA 盘位，待机功耗，放以前跑网心云收益聊胜于无，现在纯吃灰太浪费。</p>
+<p>CasaOS 适合轻量面板，但想要正经 NAS 体验、SMB 共享、相册、影视、Docker、FN Connect 还是 fnOS（飞牛私有云）更对味。飞牛后来放出了适配 OEC/OECT 的 ARM 版镜像，这玩意儿终于能体面的当私有云用了。</p>
+<p>本篇记录从拆机短接到进 fnOS 网页端的完整过程。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始之前，请准备好以下工具：</p>
+<ul>
+<li><strong>硬件</strong>：<ul>
+<li>网心云 OECT 设备（确保能正常通电）</li>
+<li>一条 USB Type-C 数据线（用于线刷）</li>
+<li>电脑（安装刷机工具）</li>
+<li>螺丝刀（拆卸外壳）</li>
+<li>金属镊子或金属丝（短接刷机触点）</li>
+</ul>
+</li>
+<li><strong>软件</strong>：<ul>
+<li>WindTerm_2.7.0（SSH远程工具）</li>
+<li>DriverAssitant_v5.12（瑞芯微驱动）</li>
+<li>RkDevTool_v2.84（瑞芯微开发工具）</li>
+<li>MiniLoaderAll.bin（引导程序）</li>
+<li>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img（fnOS系统固件）</li>
+</ul>
+</li>
+</ul>
+<h2 id="刷机步骤"><a href="#刷机步骤" class="headerlink" title="刷机步骤"></a>刷机步骤</h2><h3 id="拆开网心云-OECT-设备"><a href="#拆开网心云-OECT-设备" class="headerlink" title="拆开网心云 OECT 设备"></a>拆开网心云 OECT 设备</h3><p>按箭头向下滑动打开盖板<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234201088.jpg" alt="向下滑动打开盖板"><br>拧下四颗螺丝向上推动将盖拆开<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234320935.jpg" alt="四颗螺丝"><br>再拧下内部十一颗螺丝<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234644275.jpg" alt="十一颗螺丝"><br>取出SATA硬盘接口小版<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234801659.jpg" alt="SATA硬盘接口"><br>就可以取下内部盖版</p>
+<h3 id="刷入-fnOS-ARM-版固件"><a href="#刷入-fnOS-ARM-版固件" class="headerlink" title="刷入 fnOS ARM 版固件"></a>刷入 fnOS ARM 版固件</h3><p>将下载好的 fnOS ARM 系统固件刷入OECT。具体步骤如下：</p>
+<ul>
+<li>打开 <code>DriverAssitant_v5.12</code> → <code>DriverInstall.exe</code> 安装驱动</li>
+<li><p>打开 <code>RkDevTool_v2.84</code>，导入 <code>MiniLoaderAll.bin</code> 引导程序和 <code>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img</code> 系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223843332.png" alt="引导程序和底层系统固件"></p>
+</li>
+<li><p>短接刷机触点<br>1、2 短接点只要短接其中一个即可，建议短接1点刷机成功的概率高一些<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001622431.jpg" alt="短接刷机触点"></p>
+</li>
+<li><p>用 USB Type-C 数据线连接设备底部的 USB Type-c 接口<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001659180.jpg" alt="Type-c接口"></p>
+</li>
+<li><p>三秒后松开短接点，软件就会显示发现一个MASKPROM设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223921034.png" alt="MASKPROM设备"></p>
+</li>
+<li><p>点击 <code>执行</code> 刷入引导程序和底层系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002648086.png" alt="执行"></p>
+</li>
+<li><p>待刷好，给设备通上电并插入网线链接路由器</p>
+</li>
+</ul>
+<h3 id="进入路由器查看访问IP地址"><a href="#进入路由器查看访问IP地址" class="headerlink" title="进入路由器查看访问IP地址"></a>进入路由器查看访问IP地址</h3><p>查找名为 <code>trim-3032</code> 或者 <code>fnos</code> 的设备，并记下其 IP 地址<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224040193.png" alt="trim-3032IP"></p>
+<h2 id="注册登录-fnOS"><a href="#注册登录-fnOS" class="headerlink" title="注册登录 fnOS"></a>注册登录 fnOS</h2><ul>
+<li>浏览器输入 IP 访问 Web 页面，注册账号登录<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224910599.png" alt="欢迎页"></li>
+<li><p>设置 <code>设备名称</code>、<code>设置帐号</code>、<code>设置密码</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225101939.png" alt="注册账号"></p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225237473.png" alt="首页"></p>
+</li>
+</ul>
+<h2 id="应用推荐"><a href="#应用推荐" class="headerlink" title="应用推荐"></a>应用推荐</h2><ul>
+<li>飞牛影视：刮削海报墙，家庭影音主力。</li>
+<li>飞牛相册：人脸/相册分类，手机备份替代云盘。</li>
+<li>Docker：继续跑 qBittorrent、Alist、青龙。</li>
+<li>SMB 共享：电脑、Apple TV、播放器直接读。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>OECT 刷 fnOS 之后，就是台低功耗级别的家庭私有云：内网 SMB 备份、相册同步、轻量影音、Docker 跑点小服务，比吃灰强一百倍。如果你手里也有闲置的 OECT，不妨跟着教程试试，体验一下自己动手打造家庭云的乐趣！</p>
+<p>需要注意的是，刷机有一定风险，请谨慎操作，并确保你已经备份了重要的数据。同时，刷机前确认拿的是 ARM 适配包，不是官网 X86 固件，如果首次启动进不去网页就 SSH 看端口。本文提供的信息仅供参考，具体的刷机过程可能因设备和系统版本的不同而有所差异。祝你刷机顺利！</p>
+<hr>
+<p>请关注公众号，并回复<code>“网心云fnOS”</code>以获取相关资源。<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png" alt="微信公众号"></p>
+]]></content>
+      <categories>
+        <category>硬件折腾</category>
+      </categories>
+      <tags>
+        <tag>网心云OECT</tag>
+        <tag>家庭服务器</tag>
+        <tag>fnOS</tag>
+        <tag>飞牛私有云</tag>
       </tags>
   </entry>
 </search>
