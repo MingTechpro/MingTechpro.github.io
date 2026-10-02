@@ -59,7 +59,7 @@
 <p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356385.png" alt="设置主页标题"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356705.png" alt="设置主页标题"></p>
 <h3 id="设置关于页"><a href="#设置关于页" class="headerlink" title="设置关于页"></a>设置关于页</h3><ul>
 <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。 <code>设置个人介绍</code></li>
-<li>email: <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x63;&#104;&#x65;&#110;&#112;&#x65;&#105;&#x6d;&#105;&#x6e;&#103;&#53;&#50;&#x30;&#48;&#x31;&#x40;&#x31;&#x36;&#51;&#46;&#x63;&#x6f;&#109;">&#x63;&#104;&#x65;&#110;&#112;&#x65;&#105;&#x6d;&#105;&#x6e;&#103;&#53;&#50;&#x30;&#48;&#x31;&#x40;&#x31;&#x36;&#51;&#46;&#x63;&#x6f;&#109;</a> <code>设置自己的邮箱</code></li>
+<li>email: <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#99;&#x68;&#101;&#x6e;&#112;&#x65;&#105;&#109;&#105;&#x6e;&#x67;&#53;&#x32;&#48;&#48;&#49;&#64;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#109;">&#99;&#x68;&#101;&#x6e;&#112;&#x65;&#105;&#109;&#105;&#x6e;&#x67;&#53;&#x32;&#48;&#48;&#49;&#64;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#109;</a> <code>设置自己的邮箱</code></li>
 <li>skill_software_keywords: [Java, Python] <code>软件开发标签</code></li>
 <li>skill_j2ee_keywords: <code>J2EE开发标签</code></li>
 <li>skill_mobile_app_keywords: <code>手机开发标签</code></li>
@@ -777,172 +777,6 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
-    <title>Valine评论系统配置：基于LeanCloud实现邮件实时提醒</title>
-    <url>/posts/673e8029/</url>
-    <content><![CDATA[<p>Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。</p>
-<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><ul>
-<li>获取邮箱 SMTP 密钥</li>
-</ul>
-<!-- - 获取 AKisemt 反垃圾邮件服务 -->
-<ul>
-<li><p>获取 valine-admin 项目</p>
-</li>
-<li><p>登录 LeanCloud 部署项目</p>
-</li>
-<li><p>配置项目环境变量</p>
-</li>
-<li><p>设置后台管理</p>
-</li>
-</ul>
-<p>如果在第一次部署时遇到问题，您可以尝试多次部署，可能由于网络波动或其他因素导致第一次部署失败。多次尝试部署有助于解决这个问题。</p>
-<h2 id="获取邮箱-SMTP-密钥"><a href="#获取邮箱-SMTP-密钥" class="headerlink" title="获取邮箱 SMTP 密钥"></a>获取邮箱 SMTP 密钥</h2><p>SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参考以下链接：</p>
-<ul>
-<li><p><a href="https://zhidao.baidu.com/question/1457961254794148260.html?fr=search&amp;word=QQ%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">QQ 邮箱获取方法</a></p>
-</li>
-<li><p><a href="https://zhidao.baidu.com/question/436573565774794892.html?fr=search&amp;word=163%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">163 邮箱获取方法</a></p>
-</li>
-</ul>
-<p>其他邮箱的设置方法可以自行搜索。</p>
-<!-- ### 获取 AKisemt 反垃圾邮件服务步骤：
-
-- 1.这个可以不设置，如果你想要注册并使用反垃圾邮件功能，需要先科学上网。
-
-- 2.在 [Akismet](https://wordpress.com/start/account/user-social?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fakismet.com%252Faccount%252F) 上注册并登录账号。
-
-![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300038985.png)
-![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039525.png)
-
-- 3.注册后，确认你的邮箱以完成登录。
-
-- 4.进入[服务页面](https://akismet.com/pricing/)，选择适合你的服务。
-
-![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039375.png)
-
-- 5.根据你的需求选择付费金额，如果你选择免费版本，请注意不能用于商业活动。
-
-![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039478.png)
-
-- 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
-
-![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040419.png)
-![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040054.png) -->
-<h2 id="获取-valine-admin-项目"><a href="#获取-valine-admin-项目" class="headerlink" title="获取 valine-admin 项目"></a>获取 valine-admin 项目</h2><ul>
-<li><p><a href="https://github.com/bin862324915/valine-admin">项目地址</a></p>
-</li>
-<li><p>复制此链接以备后用：<code>https://github.com/bin862324915/valine-admin</code></p>
-</li>
-<li><p>记住分支以备后用：<code>main</code></p>
-</li>
-</ul>
-<h2 id="登录-LeanCloud-并部署项目"><a href="#登录-LeanCloud-并部署项目" class="headerlink" title="登录 LeanCloud 并部署项目"></a>登录 LeanCloud 并部署项目</h2><ul>
-<li><p>1.在 <a href="https://console.leancloud.cn/">LeanCloud</a> 上登录并创建云引擎</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040076.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040534.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040808.png" alt="创建云引擎"></p>
-</li>
-<li><p>2.通过 Git 方式部署项目</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041197.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041104.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041194.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041737.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041016.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041009.png" alt="部署项目"></p>
-</li>
-</ul>
-<h2 id="配置项目环境变量"><a href="#配置项目环境变量" class="headerlink" title="配置项目环境变量"></a>配置项目环境变量</h2><p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042051.png" alt="环境变量"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042654.png" alt="环境变量"></p>
-<p>请按照以下表格填写相应的项目环境变量：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">变量名</th>
-<th style="text-align:center">说明</th>
-<th style="text-align:center">示例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">SENDER_NAME</td>
-<td style="text-align:center">寄件人名称</td>
-<td style="text-align:center">ChenPeiming — 评论提醒</td>
-</tr>
-<tr>
-<td style="text-align:center">SITE_NAME</td>
-<td style="text-align:center">[必填]网站名称</td>
-<td style="text-align:center">ChenPeiming</td>
-</tr>
-<tr>
-<td style="text-align:center">SITE_URL</td>
-<td style="text-align:center">[必填]网站地址，地址后方不带 /</td>
-<td style="text-align:center"><a href="https://chenpeiming52001.github.io">https://chenpeiming52001.github.io</a></td>
-</tr>
-<tr>
-<td style="text-align:center">SMTP_SERVICE</td>
-<td style="text-align:center">[必填]邮件服务提供商，支持 QQ、163、126 等</td>
-<td style="text-align:center">QQ</td>
-</tr>
-<tr>
-<td style="text-align:center">SMTP_USER</td>
-<td style="text-align:center">[必填]SMTP 服务用户名，及邮箱地址</td>
-<td style="text-align:center"><a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#49;&#x32;&#51;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#49;&#x32;&#51;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></td>
-</tr>
-<tr>
-<td style="text-align:center">SMTP_PASS</td>
-<td style="text-align:center">[必填]SMTP 密码，及授权码</td>
-<td style="text-align:center">123</td>
-</tr>
-<tr>
-<td style="text-align:center">TEMPLATE_NAME</td>
-<td style="text-align:center">邮件模板，默认 default，可以选 rainbow</td>
-<td style="text-align:center">rainbow</td>
-</tr>
-<tr>
-<td style="text-align:center">TO_EMAIL</td>
-<td style="text-align:center">自定义博主收件人</td>
-<td style="text-align:center"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x63;&#104;&#x65;&#x6e;&#112;&#101;&#105;&#x6d;&#105;&#x6e;&#103;&#x35;&#x32;&#x30;&#48;&#49;&#x40;&#49;&#x36;&#51;&#46;&#x63;&#x6f;&#109;">&#x63;&#104;&#x65;&#x6e;&#112;&#101;&#105;&#x6d;&#105;&#x6e;&#103;&#x35;&#x32;&#x30;&#48;&#49;&#x40;&#49;&#x36;&#51;&#46;&#x63;&#x6f;&#109;</a></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="设置后台管理"><a href="#设置后台管理" class="headerlink" title="设置后台管理"></a>设置后台管理</h2><ul>
-<li><p>添加 <code>email</code>、<code>password</code> 和 <code>username</code></p>
-</li>
-<li><p>请注意，<code>email</code> 必须是 <code>SMTP_USER</code> 或 <code>TO_EMAIL</code> 中的一个</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042458.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042100.png" alt="后台管理"></p>
-</li>
-<li><p>配置访问域名（需要注册有域名）</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046495.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046160.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046024.png" alt="后台管理"></p>
-</li>
-</ul>
-<p>绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了</p>
-<h2 id="邮件展示"><a href="#邮件展示" class="headerlink" title="邮件展示"></a>邮件展示</h2><ul>
-<li><p>邮件模板：default</p>
-<ul>
-<li>评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046287.png" alt="default"></p>
-<ul>
-<li>回复评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046316.png" alt="default"></p>
-</li>
-<li><p>邮件模板：rainbow</p>
-<ul>
-<li>评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048681.png" alt="rainbow"></p>
-<ul>
-<li>回复评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048647.png" alt="rainbow"></p>
-</li>
-</ul>
-<p><br></p>
-<hr>
-]]></content>
-      <categories>
-        <category>运维笔记</category>
-      </categories>
-      <tags>
-        <tag>Jekyll</tag>
-        <tag>评论系统</tag>
-        <tag>LeanCloud</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>玩客云刷机指南：刷入 CasaOS 打造轻量 NAS 替代方案</title>
     <url>/posts/b065c228/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>玩客云，一款硬件性能出色的智能存储设备。轻 NAC 系统（CasaOS）以其简洁高效的优势，深受众多用户喜爱。将玩客云刷入 CasaOS 系统，能充分挖掘其潜力，带来全新功能和体验。下面，我将为大家详细介绍玩客云刷入 CasaOS 的具体步骤，并分享其优势，希望能激发大家对刷机过程的兴趣。</p>
@@ -1052,6 +886,172 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
         <tag>CasaOS</tag>
         <tag>玩客云</tag>
         <tag>家庭服务器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Valine评论系统配置：基于LeanCloud实现邮件实时提醒</title>
+    <url>/posts/673e8029/</url>
+    <content><![CDATA[<p>Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。</p>
+<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><ul>
+<li>获取邮箱 SMTP 密钥</li>
+</ul>
+<!-- - 获取 AKisemt 反垃圾邮件服务 -->
+<ul>
+<li><p>获取 valine-admin 项目</p>
+</li>
+<li><p>登录 LeanCloud 部署项目</p>
+</li>
+<li><p>配置项目环境变量</p>
+</li>
+<li><p>设置后台管理</p>
+</li>
+</ul>
+<p>如果在第一次部署时遇到问题，您可以尝试多次部署，可能由于网络波动或其他因素导致第一次部署失败。多次尝试部署有助于解决这个问题。</p>
+<h2 id="获取邮箱-SMTP-密钥"><a href="#获取邮箱-SMTP-密钥" class="headerlink" title="获取邮箱 SMTP 密钥"></a>获取邮箱 SMTP 密钥</h2><p>SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参考以下链接：</p>
+<ul>
+<li><p><a href="https://zhidao.baidu.com/question/1457961254794148260.html?fr=search&amp;word=QQ%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">QQ 邮箱获取方法</a></p>
+</li>
+<li><p><a href="https://zhidao.baidu.com/question/436573565774794892.html?fr=search&amp;word=163%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">163 邮箱获取方法</a></p>
+</li>
+</ul>
+<p>其他邮箱的设置方法可以自行搜索。</p>
+<!-- ### 获取 AKisemt 反垃圾邮件服务步骤：
+
+- 1.这个可以不设置，如果你想要注册并使用反垃圾邮件功能，需要先科学上网。
+
+- 2.在 [Akismet](https://wordpress.com/start/account/user-social?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fakismet.com%252Faccount%252F) 上注册并登录账号。
+
+![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300038985.png)
+![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039525.png)
+
+- 3.注册后，确认你的邮箱以完成登录。
+
+- 4.进入[服务页面](https://akismet.com/pricing/)，选择适合你的服务。
+
+![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039375.png)
+
+- 5.根据你的需求选择付费金额，如果你选择免费版本，请注意不能用于商业活动。
+
+![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039478.png)
+
+- 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
+
+![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040419.png)
+![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040054.png) -->
+<h2 id="获取-valine-admin-项目"><a href="#获取-valine-admin-项目" class="headerlink" title="获取 valine-admin 项目"></a>获取 valine-admin 项目</h2><ul>
+<li><p><a href="https://github.com/bin862324915/valine-admin">项目地址</a></p>
+</li>
+<li><p>复制此链接以备后用：<code>https://github.com/bin862324915/valine-admin</code></p>
+</li>
+<li><p>记住分支以备后用：<code>main</code></p>
+</li>
+</ul>
+<h2 id="登录-LeanCloud-并部署项目"><a href="#登录-LeanCloud-并部署项目" class="headerlink" title="登录 LeanCloud 并部署项目"></a>登录 LeanCloud 并部署项目</h2><ul>
+<li><p>1.在 <a href="https://console.leancloud.cn/">LeanCloud</a> 上登录并创建云引擎</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040076.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040534.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040808.png" alt="创建云引擎"></p>
+</li>
+<li><p>2.通过 Git 方式部署项目</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041197.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041104.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041194.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041737.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041016.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041009.png" alt="部署项目"></p>
+</li>
+</ul>
+<h2 id="配置项目环境变量"><a href="#配置项目环境变量" class="headerlink" title="配置项目环境变量"></a>配置项目环境变量</h2><p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042051.png" alt="环境变量"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042654.png" alt="环境变量"></p>
+<p>请按照以下表格填写相应的项目环境变量：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">变量名</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SENDER_NAME</td>
+<td style="text-align:center">寄件人名称</td>
+<td style="text-align:center">ChenPeiming — 评论提醒</td>
+</tr>
+<tr>
+<td style="text-align:center">SITE_NAME</td>
+<td style="text-align:center">[必填]网站名称</td>
+<td style="text-align:center">ChenPeiming</td>
+</tr>
+<tr>
+<td style="text-align:center">SITE_URL</td>
+<td style="text-align:center">[必填]网站地址，地址后方不带 /</td>
+<td style="text-align:center"><a href="https://chenpeiming52001.github.io">https://chenpeiming52001.github.io</a></td>
+</tr>
+<tr>
+<td style="text-align:center">SMTP_SERVICE</td>
+<td style="text-align:center">[必填]邮件服务提供商，支持 QQ、163、126 等</td>
+<td style="text-align:center">QQ</td>
+</tr>
+<tr>
+<td style="text-align:center">SMTP_USER</td>
+<td style="text-align:center">[必填]SMTP 服务用户名，及邮箱地址</td>
+<td style="text-align:center"><a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#49;&#50;&#51;&#x40;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#109;">&#49;&#50;&#51;&#x40;&#x71;&#x71;&#x2e;&#x63;&#x6f;&#109;</a></td>
+</tr>
+<tr>
+<td style="text-align:center">SMTP_PASS</td>
+<td style="text-align:center">[必填]SMTP 密码，及授权码</td>
+<td style="text-align:center">123</td>
+</tr>
+<tr>
+<td style="text-align:center">TEMPLATE_NAME</td>
+<td style="text-align:center">邮件模板，默认 default，可以选 rainbow</td>
+<td style="text-align:center">rainbow</td>
+</tr>
+<tr>
+<td style="text-align:center">TO_EMAIL</td>
+<td style="text-align:center">自定义博主收件人</td>
+<td style="text-align:center"><a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x63;&#x68;&#101;&#110;&#x70;&#x65;&#105;&#109;&#105;&#110;&#x67;&#53;&#x32;&#x30;&#x30;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#99;&#x6f;&#109;">&#x63;&#x68;&#101;&#110;&#x70;&#x65;&#105;&#109;&#105;&#110;&#x67;&#53;&#x32;&#x30;&#x30;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#99;&#x6f;&#109;</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="设置后台管理"><a href="#设置后台管理" class="headerlink" title="设置后台管理"></a>设置后台管理</h2><ul>
+<li><p>添加 <code>email</code>、<code>password</code> 和 <code>username</code></p>
+</li>
+<li><p>请注意，<code>email</code> 必须是 <code>SMTP_USER</code> 或 <code>TO_EMAIL</code> 中的一个</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042458.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042100.png" alt="后台管理"></p>
+</li>
+<li><p>配置访问域名（需要注册有域名）</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046495.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046160.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046024.png" alt="后台管理"></p>
+</li>
+</ul>
+<p>绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了</p>
+<h2 id="邮件展示"><a href="#邮件展示" class="headerlink" title="邮件展示"></a>邮件展示</h2><ul>
+<li><p>邮件模板：default</p>
+<ul>
+<li>评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046287.png" alt="default"></p>
+<ul>
+<li>回复评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046316.png" alt="default"></p>
+</li>
+<li><p>邮件模板：rainbow</p>
+<ul>
+<li>评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048681.png" alt="rainbow"></p>
+<ul>
+<li>回复评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048647.png" alt="rainbow"></p>
+</li>
+</ul>
+<p><br></p>
+<hr>
+]]></content>
+      <categories>
+        <category>运维笔记</category>
+      </categories>
+      <tags>
+        <tag>Jekyll</tag>
+        <tag>评论系统</tag>
+        <tag>LeanCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -1430,6 +1430,272 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
+    <title>网心云OECT刷机指南：刷入 fnOS 打造低功耗私有云</title>
+    <url>/posts/7e43b1c0/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>抽屉里那台 <strong>网心云 OECT</strong>（One Ecosystem Computing Tool）又翻出来了。RK3566 四核 A55、4GB 内存、8GB eMMC，还带 2.5 寸 SATA 盘位，待机功耗，放以前跑网心云收益聊胜于无，现在纯吃灰太浪费。</p>
+<p>CasaOS 适合轻量面板，但想要正经 NAS 体验、SMB 共享、相册、影视、Docker、FN Connect 还是 fnOS（飞牛私有云）更对味。飞牛后来放出了适配 OEC/OECT 的 ARM 版镜像，这玩意儿终于能体面的当私有云用了。</p>
+<p>本篇记录从拆机短接到进 fnOS 网页端的完整过程。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始之前，请准备好以下工具：</p>
+<ul>
+<li><strong>硬件</strong>：<ul>
+<li>网心云 OECT 设备（确保能正常通电）</li>
+<li>一条 USB Type-C 数据线（用于线刷）</li>
+<li>电脑（安装刷机工具）</li>
+<li>螺丝刀（拆卸外壳）</li>
+<li>金属镊子或金属丝（短接刷机触点）</li>
+</ul>
+</li>
+<li><strong>软件</strong>：<ul>
+<li>WindTerm_2.7.0（SSH远程工具）</li>
+<li>DriverAssitant_v5.12（瑞芯微驱动）</li>
+<li>RkDevTool_v2.84（瑞芯微开发工具）</li>
+<li>MiniLoaderAll.bin（引导程序）</li>
+<li>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img（fnOS系统固件）</li>
+</ul>
+</li>
+</ul>
+<h2 id="刷机步骤"><a href="#刷机步骤" class="headerlink" title="刷机步骤"></a>刷机步骤</h2><h3 id="拆开网心云-OECT-设备"><a href="#拆开网心云-OECT-设备" class="headerlink" title="拆开网心云 OECT 设备"></a>拆开网心云 OECT 设备</h3><p>按箭头向下滑动打开盖板<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234201088.jpg" alt="向下滑动打开盖板"><br>拧下四颗螺丝向上推动将盖拆开<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234320935.jpg" alt="四颗螺丝"><br>再拧下内部十一颗螺丝<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234644275.jpg" alt="十一颗螺丝"><br>取出SATA硬盘接口小版<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234801659.jpg" alt="SATA硬盘接口"><br>就可以取下内部盖版</p>
+<h3 id="刷入-fnOS-ARM-版固件"><a href="#刷入-fnOS-ARM-版固件" class="headerlink" title="刷入 fnOS ARM 版固件"></a>刷入 fnOS ARM 版固件</h3><p>将下载好的 fnOS ARM 系统固件刷入OECT。具体步骤如下：</p>
+<ul>
+<li>打开 <code>DriverAssitant_v5.12</code> → <code>DriverInstall.exe</code> 安装驱动</li>
+<li><p>打开 <code>RkDevTool_v2.84</code>，导入 <code>MiniLoaderAll.bin</code> 引导程序和 <code>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img</code> 系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223843332.png" alt="引导程序和底层系统固件"></p>
+</li>
+<li><p>短接刷机触点<br>1、2 短接点只要短接其中一个即可，建议短接1点刷机成功的概率高一些<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001622431.jpg" alt="短接刷机触点"></p>
+</li>
+<li><p>用 USB Type-C 数据线连接设备底部的 USB Type-c 接口<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001659180.jpg" alt="Type-c接口"></p>
+</li>
+<li><p>三秒后松开短接点，软件就会显示发现一个MASKPROM设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223921034.png" alt="MASKPROM设备"></p>
+</li>
+<li><p>点击 <code>执行</code> 刷入引导程序和底层系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002648086.png" alt="执行"></p>
+</li>
+<li><p>待刷好，给设备通上电并插入网线链接路由器</p>
+</li>
+</ul>
+<h3 id="进入路由器查看访问IP地址"><a href="#进入路由器查看访问IP地址" class="headerlink" title="进入路由器查看访问IP地址"></a>进入路由器查看访问IP地址</h3><p>查找名为 <code>trim-3032</code> 或者 <code>fnos</code> 的设备，并记下其 IP 地址<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224040193.png" alt="trim-3032IP"></p>
+<h2 id="注册登录-fnOS"><a href="#注册登录-fnOS" class="headerlink" title="注册登录 fnOS"></a>注册登录 fnOS</h2><ul>
+<li>浏览器输入 IP 访问 Web 页面，注册账号登录<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224910599.png" alt="欢迎页"></li>
+<li><p>设置 <code>设备名称</code>、<code>设置帐号</code>、<code>设置密码</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225101939.png" alt="注册账号"></p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225237473.png" alt="首页"></p>
+</li>
+</ul>
+<h2 id="应用推荐"><a href="#应用推荐" class="headerlink" title="应用推荐"></a>应用推荐</h2><ul>
+<li>飞牛影视：刮削海报墙，家庭影音主力。</li>
+<li>飞牛相册：人脸/相册分类，手机备份替代云盘。</li>
+<li>Docker：继续跑 qBittorrent、Alist、青龙。</li>
+<li>SMB 共享：电脑、Apple TV、播放器直接读。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>OECT 刷 fnOS 之后，就是台低功耗级别的家庭私有云：内网 SMB 备份、相册同步、轻量影音、Docker 跑点小服务，比吃灰强一百倍。如果你手里也有闲置的 OECT，不妨跟着教程试试，体验一下自己动手打造家庭云的乐趣！</p>
+<p>需要注意的是，刷机有一定风险，请谨慎操作，并确保你已经备份了重要的数据。同时，刷机前确认拿的是 ARM 适配包，不是官网 X86 固件，如果首次启动进不去网页就 SSH 看端口。本文提供的信息仅供参考，具体的刷机过程可能因设备和系统版本的不同而有所差异。祝你刷机顺利！</p>
+<hr>
+<p>请关注公众号，并回复<code>“网心云fnOS”</code>以获取相关资源。<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png" alt="微信公众号"></p>
+]]></content>
+      <categories>
+        <category>硬件折腾</category>
+      </categories>
+      <tags>
+        <tag>家庭服务器</tag>
+        <tag>fnOS</tag>
+        <tag>私有云</tag>
+        <tag>网心云OECT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>fnOS 部署青龙面板：基于 Docker Compose 的定时任务持久化方案</title>
+    <url>/posts/e938c45c/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果你有一台跑 fnOS（飞牛）的 NAS 或小主机，想把各类签到、定时采集、自动化脚本集中管理，青龙面板是非常合适的选择。它基于 Docker，提供 Web 管理后台、cron 定时任务、环境变量、脚本/订阅管理以及通知渠道，默认 Web 端口 5700。</p>
+<p>在 fnOS 部署青龙有两种思路</p>
+<ul>
+<li><p>Docker-compose：更通用、更可控的是用 fnOS 自带 Docker 做 Compose 部署，数据挂到宿主机目录，重装/升级容器都不丢配置。可按照本文章顺序跑通。</p>
+</li>
+<li><p>应用中心一键安装：应用中心如果能搜到“青龙”可点击安装更方便。</p>
+</li>
+</ul>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="确认-Docker-可用"><a href="#确认-Docker-可用" class="headerlink" title="确认 Docker 可用"></a>确认 Docker 可用</h3><ul>
+<li><p>登录 fnOS Web 管理台，点击 <code>Docker</code> 应用进入。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021231605.png" alt="Docker应用"></p>
+</li>
+<li><p>首次打开 Docker 会让你设置存储位置，建议放到 SSD 或固定存储空间，后续镜像、容器数据都从这里走。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021306572.png" alt="配置存储位置"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021327927.png" alt="选择存储位置"></p>
+</li>
+<li><p>设置完成后，在 Docker 应用里能看到<code>概览、容器、Compose、镜像、网络</code> 等入口即可。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021344447.png" alt="Docker应用"></p>
+</li>
+</ul>
+<h3 id="创建青龙数据目录"><a href="#创建青龙数据目录" class="headerlink" title="创建青龙数据目录"></a>创建青龙数据目录</h3><p>青龙所有配置、脚本、日志、数据库都建议挂到宿主机。通常将 <code>/ql/data</code> 挂载到宿主机 <code>/vol1/1000/Docker/qinglong</code>，路径覆盖配置、脚本、仓库、日志、数据库等核心数据。</p>
+<ul>
+<li><p>点击 <code>文件管理</code> 应用<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021402120.png" alt="文件管理应用"></p>
+</li>
+<li><p>创建路径：<code>/Docker/qinglong</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021557451.png" alt="创建文件路径"></p>
+</li>
+</ul>
+<h2 id="Compose-部署青龙"><a href="#Compose-部署青龙" class="headerlink" title="Compose 部署青龙"></a>Compose 部署青龙</h2><h3 id="Docker-界面创建-Compose-项目"><a href="#Docker-界面创建-Compose-项目" class="headerlink" title="Docker 界面创建 Compose 项目"></a>Docker 界面创建 Compose 项目</h3><ul>
+<li><p>返回 <code>Docker</code> 应用，「Compose」→「新增项目」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021613962.png" alt="新增项目"></p>
+</li>
+<li><p>填写项目名称：qinglong<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021626841.png" alt="填写项目名称"></p>
+</li>
+<li><p>选择项目路径：存储空间 1/我的文件/Docker/qinglong<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021637533.png" alt="选择项目路径"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021657681.png" alt="选中文件夹"></p>
+</li>
+<li><p>选择创建「创建 docker-compose.yml」写入内容如下：<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021727879.png" alt="docker-compose.yml"></p>
+</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">qinglong:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">whyour/qinglong:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">qinglong</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;5700:5700&quot;</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">TZ:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line">      <span class="attr">QlBaseUrl:</span> <span class="string">&quot;/&quot;</span></span><br><span class="line">      <span class="attr">QlPort:</span> <span class="string">&quot;5700&quot;</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/vol1/1000/Docker/qinglong:/ql/data</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>勾选「创建项目后立即启动」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021815660.png" alt="创建项目后立即启动"></p>
+</li>
+<li><p>等待构建完成<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021828544.png" alt="等待构建完成"></p>
+</li>
+</ul>
+<h3 id="应用中心一键安装（备选）"><a href="#应用中心一键安装（备选）" class="headerlink" title="应用中心一键安装（备选）"></a>应用中心一键安装（备选）</h3><p>部分 fnOS 应用中心版本可能直接提供 “青龙面板” 模板。路径：应用中心搜索 “青龙” → 安装 → 按向导设置端口与存储目录 → 完成后在 “已安装” 里打开。优点是少配 YAML，缺点是版本更新可能慢于官方 Docker 镜像。若应用中心搜不到，不要纠结，直接用 Docker Compose 方案。</p>
+<h2 id="初始化青龙面板"><a href="#初始化青龙面板" class="headerlink" title="初始化青龙面板"></a>初始化青龙面板</h2><p>首次进入会走初始化向导，跟着教程配置即可。</p>
+<ul>
+<li><p>点击「容器」→「快捷访问」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021849447.png" alt="快捷访问青龙面板"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021908207.png" alt="青龙面板初始化"></p>
+</li>
+<li><p>设置通知方式：我是配置企业微信机器人<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021923503.png" alt="设置通知方式"></p>
+</li>
+<li><p>设置管理员账号、密码<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021933935.png" alt="设置管理员账号、密码"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021946583.png" alt="青龙面板配置完成"></p>
+</li>
+<li><p>登录青龙面板<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002021955412.png" alt="登录青龙面板"></p>
+</li>
+</ul>
+<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>青龙面板里 “环境变量” 用于放脚本需要的 Cookie、Token、账号和密码等。</p>
+<ul>
+<li><p>左侧边栏「环境变量」→「创建变量」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022014374.png" alt="创建变量"></p>
+</li>
+<li><p>按脚本要求填写名称/值</p>
+<p>例如：JD_COOKIE、PUSH_PLUS_TOKEN 等，名称必须与脚本读取的变量名一致。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022148397.png" alt="输入名称/值"></p>
+</li>
+<li><p>保存后，定时任务才能读到这些变量<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022342547.png" alt="环境变量"></p>
+<blockquote>
+<p>注意：敏感变量不要在公网裸暴露。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="安装脚本依赖"><a href="#安装脚本依赖" class="headerlink" title="安装脚本依赖"></a>安装脚本依赖</h3><p>很多签到脚本依赖于 Nodejs/Python 的包进行编写，使用时需要提前添加相应的依赖。</p>
+<ul>
+<li><p>左侧边栏「依赖管理」→「创建依赖」</p>
+<p>以 Python3 脚本中经常使用到的 requests 包为例创建依赖。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022401772.png" alt="创建依赖"></p>
+</li>
+<li><p>依赖类型选择「Python3」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022506059.png" alt="依赖类型选择"></p>
+</li>
+<li>名称填入「requests」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022514744.png" alt="名称填入"></li>
+<li>依赖装完再跑脚本，能大幅减少运行时报错。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022526863.png" alt="依赖管理"></li>
+</ul>
+<h2 id="脚本与定时任务"><a href="#脚本与定时任务" class="headerlink" title="脚本与定时任务"></a>脚本与定时任务</h2><h3 id="手动添加脚本"><a href="#手动添加脚本" class="headerlink" title="手动添加脚本"></a>手动添加脚本</h3><ul>
+<li>左侧边栏「脚本管理」→「创建」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022544121.png" alt="创建脚本"></li>
+<li>创建 example.sh 文件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022551495.png" alt="example.sh"></li>
+<li>写入示例代码，并保存<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022754116.png" alt="示例代码"></li>
+</ul>
+<p>示例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;青龙测试任务 <span class="subst">$(date &#x27;+%F %T&#x27;)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>保存后，点击「调试」进入调试界面<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022902390.png" alt="调试脚本"></li>
+<li>点击「运行」查看日志确认无报错，再做成定时任务。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002022919959.png" alt="运行脚本"></li>
+</ul>
+<h3 id="创建定时任务"><a href="#创建定时任务" class="headerlink" title="创建定时任务"></a>创建定时任务</h3><ul>
+<li><p>左侧边栏「定时任务」→「创建任务」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023404835.png" alt="创建定时任务"></p>
+</li>
+<li><p>名称：填入 <code>定时任务</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023420439.png" alt="名称"></p>
+</li>
+<li><p>命令/脚本：填入 <code>example.sh 或 task example.sh</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023433638.png" alt="命令/脚本"></p>
+</li>
+<li><p>定时类型：默认 <code>常规定时</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023450865.png" alt="定时类型"></p>
+</li>
+<li><p>定时规则：填入 <code>0 0 * * *</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023508444.png" alt="定时规则"></p>
+</li>
+<li><p>确定创建定时任务<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023525171.png" alt="确定创建定时任务"></p>
+</li>
+<li><p>点击「运行」测试定时任务<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023535464.png" alt="测试定时任务"></p>
+</li>
+<li><p>点击「日志」查看定时任务是否成功执行<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023545957.png" alt="查看定时任务日志"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023612729.png" alt="定时任务日志"></p>
+</li>
+</ul>
+<h2 id="订阅批量拉库"><a href="#订阅批量拉库" class="headerlink" title="订阅批量拉库"></a>订阅批量拉库</h2><p>“拉库”是青龙面板中特有的术语，指从远程 Git 仓库中批量拉取脚本文件到本地青龙面板的过程。以拉取 Faker3 库为例，演示完整的配置过程。</p>
+<h3 id="创建订阅项目"><a href="#创建订阅项目" class="headerlink" title="创建订阅项目"></a>创建订阅项目</h3><ul>
+<li><p>左侧边栏「订阅管理」→「创建订阅」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023649423.png" alt="创建订阅"></p>
+</li>
+<li><p>名称：填写 <code>Faker3京东库</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023658275.png" alt="名称"></p>
+</li>
+<li><p>类型：选择 <code>公开仓库</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023734697.png" alt="类型"></p>
+</li>
+<li><p>链接：填写 <code>https://github.com/shufflewzc/faker3.git</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023748024.png" alt="链接"></p>
+</li>
+<li><p>分支：填写 <code>main</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023748024.png" alt="分支"></p>
+</li>
+<li><p>定时类型：选择 <code>crontab</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023810478.png" alt="定时类型"></p>
+</li>
+<li><p>定时规则：填写 <code>0 0 * * *</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023810478.png" alt="定时规则"></p>
+</li>
+<li><p>白名单：填写 <code>jd_|jx_|gua_|jddj_|jdCookie</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023849076.png" alt="白名单"></p>
+</li>
+<li><p>黑名单：填写 <code>activity|backUp</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023902855.png" alt="黑名单"></p>
+</li>
+<li><p>依赖：填写 <code>^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator|magic|depend|h5sts</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023916418.png" alt="依赖"></p>
+</li>
+<li><p>文件后缀：填写 <code>js</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023924601.png" alt="文件后缀"></p>
+</li>
+<li><p>确定创建订阅<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002023959004.png" alt="确定创建订阅"></p>
+</li>
+</ul>
+<h3 id="执行订阅批量拉库"><a href="#执行订阅批量拉库" class="headerlink" title="执行订阅批量拉库"></a>执行订阅批量拉库</h3><p>订阅创建后，需要手动执行一次拉库操作，验证创建订阅配置是否正确。</p>
+<ul>
+<li><p>点击「运行」测试订阅配置是否正确<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024017643.png" alt="测试订阅配置"></p>
+</li>
+<li><p>点击「日志」查看订阅是否成功执行<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024029163.png" alt="查看订阅日志"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024037944.png" alt="订阅日志"></p>
+<blockquote>
+<p>不建议盲目添加来源不明的大库，避免执行到泄露账号、异常请求的脚本。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="查看定时任务"><a href="#查看定时任务" class="headerlink" title="查看定时任务"></a>查看定时任务</h3><p>拉库成功后，会自动生成相应的定时任务。</p>
+<ul>
+<li>左侧边栏「定时任务」查看是否自动添加定时任务<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024059269.png" alt="查看定时任务"></li>
+</ul>
+<h2 id="备份与更新"><a href="#备份与更新" class="headerlink" title="备份与更新"></a>备份与更新</h2><h3 id="备份数据"><a href="#备份数据" class="headerlink" title="备份数据"></a>备份数据</h3><p>如遇到青龙面板版本更新，建议先备份 <code>/Docker/qinglong</code></p>
+<ul>
+<li><p>打开 <code>文件管理</code> 应用，创建路径：<code>/重要文件备份</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024248170.png" alt="重要文件备份"></p>
+</li>
+<li><p>全选 <code>/Docker/qinglong</code> 文件夹<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024307391.png" alt="/Docker/qinglong"></p>
+</li>
+<li><p>操作鼠标右键单击，「复制到/移动到」→「复制到」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024319899.png" alt="复制到/移动到"></p>
+</li>
+<li><p>选中 <code>重要文件备份</code> 「复制到此」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024331491.png" alt="复制到此"></p>
+</li>
+<li><p>选择 「复制并覆盖」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024633280.png" alt="复制并覆盖"></p>
+</li>
+</ul>
+<h3 id="更新镜像"><a href="#更新镜像" class="headerlink" title="更新镜像"></a>更新镜像</h3><ul>
+<li><p>打开 <code>Docker</code> 应用，「Compose」→「停止」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024807120.png" alt="停止容器"></p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024818664.png" alt="停止容器日志"></p>
+</li>
+<li><p>点击「构建」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024830744.png" alt="构建容器"></p>
+</li>
+<li><p>等待构建完成<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20261002024838691.png" alt="构建容器日志"></p>
+</li>
+</ul>
+<p>青龙面板核心数据挂载在 <code>/Docker/qinglong</code> 更新一般不会清配置。但大版本升级前仍建议先备份。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在飞牛 fnOS 上部署青龙面板，核心就三件事：数据挂出来、Compose 部署、进面板配任务。</p>
+<ul>
+<li><p>数据持久化是底线：把宿主机目录（如 /vol1/1000/Docker/qinglong）挂载到容器 /ql/data，重装系统、删容器、升级镜像都不丢脚本和配置。</p>
+</li>
+<li><p>Compose 是最稳的部署方式：5700 端口映射 + Asia/Shanghai 时区 + unless-stopped 重启策略，一条 YAML 搞定，fnOS 的 Docker 界面直接可视化操作，门槛很低。</p>
+</li>
+<li><p>初始化后做三件事：设管理员账号 → 填环境变量（Cookie/Token）→ 装依赖（Python3/Node.js 包），顺序别反，否则脚本跑不起来。</p>
+</li>
+<li><p>任务两种来源：自己写脚本手动建 cron，或者订阅公开仓库批量拉库。拉库注意白名单过滤，别无脑加不明来源的库。</p>
+</li>
+<li><p>维护成本很低：日常备份 /ql/data 目录，更新镜像只需停容器 → 重新构建，配置原样保留。</p>
+</li>
+</ul>
+<p>跑通之后，你就拥有了一个 7×24 小时的自动化调度员——签到、采集、监控、定期清理都能托管进去。唯一要记住的铁律：只加自己信任的脚本，别把 5700 端口裸暴露在公网，Cookie 和 Token 只填自己的账号。</p>
+]]></content>
+      <categories>
+        <category>网络 &amp; 自部署</category>
+      </categories>
+      <tags>
+        <tag>fnOS</tag>
+        <tag>Docker</tag>
+        <tag>青龙面板</tag>
+        <tag>Docker Compose</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IPv6 + DDNS-GO + Cloudflare：全场景家庭内网安全穿透方案</title>
     <url>/posts/dc023582/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>随着 IPv6 技术的全面普及，家庭宽带已逐步告别 IPv4 地址短缺、内网穿透依赖中转服务器的困境，多数运营商已为家庭用户分配以 240 开头的公网 IPv6 地址。与传统 IPv4 内网穿透方案相比，依托 IPv6 直接访问内网设备，具有<code>延迟低、传输速度快、无需额外中转节点、部署成本低</code>等核心优势，完美适配个人 NAS、软路由、Linux 设备服务。<br>然而，运营商分配的 IPv6 地址并非固定不变，会随网络重启、运营商配置调整等因素动态变化，导致无法通过固定 IP 实现外网稳定访问。基于此，本教程将详细讲解如何通过 DDNS-GO 动态解析工具，结合 Cloudflare 域名托管服务，实现外网通过域名快速、安全访问本地部署的 CasaOS，覆盖从环境准备、配置部署到安全加固的全流程，适用于 x86 软路由、树莓派、各类 Linux 设备等所有可安装 DDNS-GO 的场景，新手也能轻松上手。</p>
@@ -1663,76 +1929,6 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
         <tag>CasaOS</tag>
         <tag>家庭服务器</tag>
         <tag>网心云OECT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网心云OECT刷机指南：刷入 fnOS 打造低功耗私有云</title>
-    <url>/posts/7e43b1c0/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>抽屉里那台 <strong>网心云 OECT</strong>（One Ecosystem Computing Tool）又翻出来了。RK3566 四核 A55、4GB 内存、8GB eMMC，还带 2.5 寸 SATA 盘位，待机功耗，放以前跑网心云收益聊胜于无，现在纯吃灰太浪费。</p>
-<p>CasaOS 适合轻量面板，但想要正经 NAS 体验、SMB 共享、相册、影视、Docker、FN Connect 还是 fnOS（飞牛私有云）更对味。飞牛后来放出了适配 OEC/OECT 的 ARM 版镜像，这玩意儿终于能体面的当私有云用了。</p>
-<p>本篇记录从拆机短接到进 fnOS 网页端的完整过程。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始之前，请准备好以下工具：</p>
-<ul>
-<li><strong>硬件</strong>：<ul>
-<li>网心云 OECT 设备（确保能正常通电）</li>
-<li>一条 USB Type-C 数据线（用于线刷）</li>
-<li>电脑（安装刷机工具）</li>
-<li>螺丝刀（拆卸外壳）</li>
-<li>金属镊子或金属丝（短接刷机触点）</li>
-</ul>
-</li>
-<li><strong>软件</strong>：<ul>
-<li>WindTerm_2.7.0（SSH远程工具）</li>
-<li>DriverAssitant_v5.12（瑞芯微驱动）</li>
-<li>RkDevTool_v2.84（瑞芯微开发工具）</li>
-<li>MiniLoaderAll.bin（引导程序）</li>
-<li>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img（fnOS系统固件）</li>
-</ul>
-</li>
-</ul>
-<h2 id="刷机步骤"><a href="#刷机步骤" class="headerlink" title="刷机步骤"></a>刷机步骤</h2><h3 id="拆开网心云-OECT-设备"><a href="#拆开网心云-OECT-设备" class="headerlink" title="拆开网心云 OECT 设备"></a>拆开网心云 OECT 设备</h3><p>按箭头向下滑动打开盖板<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234201088.jpg" alt="向下滑动打开盖板"><br>拧下四颗螺丝向上推动将盖拆开<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234320935.jpg" alt="四颗螺丝"><br>再拧下内部十一颗螺丝<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234644275.jpg" alt="十一颗螺丝"><br>取出SATA硬盘接口小版<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234801659.jpg" alt="SATA硬盘接口"><br>就可以取下内部盖版</p>
-<h3 id="刷入-fnOS-ARM-版固件"><a href="#刷入-fnOS-ARM-版固件" class="headerlink" title="刷入 fnOS ARM 版固件"></a>刷入 fnOS ARM 版固件</h3><p>将下载好的 fnOS ARM 系统固件刷入OECT。具体步骤如下：</p>
-<ul>
-<li>打开 <code>DriverAssitant_v5.12</code> → <code>DriverInstall.exe</code> 安装驱动</li>
-<li><p>打开 <code>RkDevTool_v2.84</code>，导入 <code>MiniLoaderAll.bin</code> 引导程序和 <code>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img</code> 系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223843332.png" alt="引导程序和底层系统固件"></p>
-</li>
-<li><p>短接刷机触点<br>1、2 短接点只要短接其中一个即可，建议短接1点刷机成功的概率高一些<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001622431.jpg" alt="短接刷机触点"></p>
-</li>
-<li><p>用 USB Type-C 数据线连接设备底部的 USB Type-c 接口<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001659180.jpg" alt="Type-c接口"></p>
-</li>
-<li><p>三秒后松开短接点，软件就会显示发现一个MASKPROM设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223921034.png" alt="MASKPROM设备"></p>
-</li>
-<li><p>点击 <code>执行</code> 刷入引导程序和底层系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002648086.png" alt="执行"></p>
-</li>
-<li><p>待刷好，给设备通上电并插入网线链接路由器</p>
-</li>
-</ul>
-<h3 id="进入路由器查看访问IP地址"><a href="#进入路由器查看访问IP地址" class="headerlink" title="进入路由器查看访问IP地址"></a>进入路由器查看访问IP地址</h3><p>查找名为 <code>trim-3032</code> 或者 <code>fnos</code> 的设备，并记下其 IP 地址<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224040193.png" alt="trim-3032IP"></p>
-<h2 id="注册登录-fnOS"><a href="#注册登录-fnOS" class="headerlink" title="注册登录 fnOS"></a>注册登录 fnOS</h2><ul>
-<li>浏览器输入 IP 访问 Web 页面，注册账号登录<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224910599.png" alt="欢迎页"></li>
-<li><p>设置 <code>设备名称</code>、<code>设置帐号</code>、<code>设置密码</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225101939.png" alt="注册账号"></p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225237473.png" alt="首页"></p>
-</li>
-</ul>
-<h2 id="应用推荐"><a href="#应用推荐" class="headerlink" title="应用推荐"></a>应用推荐</h2><ul>
-<li>飞牛影视：刮削海报墙，家庭影音主力。</li>
-<li>飞牛相册：人脸/相册分类，手机备份替代云盘。</li>
-<li>Docker：继续跑 qBittorrent、Alist、青龙。</li>
-<li>SMB 共享：电脑、Apple TV、播放器直接读。</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>OECT 刷 fnOS 之后，就是台低功耗级别的家庭私有云：内网 SMB 备份、相册同步、轻量影音、Docker 跑点小服务，比吃灰强一百倍。如果你手里也有闲置的 OECT，不妨跟着教程试试，体验一下自己动手打造家庭云的乐趣！</p>
-<p>需要注意的是，刷机有一定风险，请谨慎操作，并确保你已经备份了重要的数据。同时，刷机前确认拿的是 ARM 适配包，不是官网 X86 固件，如果首次启动进不去网页就 SSH 看端口。本文提供的信息仅供参考，具体的刷机过程可能因设备和系统版本的不同而有所差异。祝你刷机顺利！</p>
-<hr>
-<p>请关注公众号，并回复<code>“网心云fnOS”</code>以获取相关资源。<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png" alt="微信公众号"></p>
-]]></content>
-      <categories>
-        <category>硬件折腾</category>
-      </categories>
-      <tags>
-        <tag>家庭服务器</tag>
-        <tag>网心云OECT</tag>
-        <tag>fnOS</tag>
-        <tag>飞牛私有云</tag>
       </tags>
   </entry>
 </search>
