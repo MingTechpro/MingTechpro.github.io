@@ -59,7 +59,7 @@
 <p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356385.png" alt="设置主页标题"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404292356705.png" alt="设置主页标题"></p>
 <h3 id="设置关于页"><a href="#设置关于页" class="headerlink" title="设置关于页"></a>设置关于页</h3><ul>
 <li>introduce: 我是一个对学习充满热情、善于思考和寻找解决方案的人。 <code>设置个人介绍</code></li>
-<li>email: <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x63;&#104;&#101;&#x6e;&#112;&#101;&#105;&#x6d;&#105;&#110;&#103;&#53;&#50;&#x30;&#x30;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#99;&#x6f;&#109;">&#x63;&#104;&#101;&#x6e;&#112;&#101;&#105;&#x6d;&#105;&#110;&#103;&#53;&#50;&#x30;&#x30;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#99;&#x6f;&#109;</a> <code>设置自己的邮箱</code></li>
+<li>email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x63;&#104;&#x65;&#110;&#112;&#x65;&#x69;&#x6d;&#105;&#x6e;&#x67;&#x35;&#50;&#x30;&#48;&#49;&#64;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#x6d;">&#x63;&#104;&#x65;&#110;&#112;&#x65;&#x69;&#x6d;&#105;&#x6e;&#x67;&#x35;&#50;&#x30;&#48;&#49;&#64;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#x6d;</a> <code>设置自己的邮箱</code></li>
 <li>skill_software_keywords: [Java, Python] <code>软件开发标签</code></li>
 <li>skill_j2ee_keywords: <code>J2EE开发标签</code></li>
 <li>skill_mobile_app_keywords: <code>手机开发标签</code></li>
@@ -122,282 +122,6 @@
       <tags>
         <tag>Jekyll</tag>
         <tag>静态网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown进阶写作技巧：排版优化与效率提升指南</title>
-    <url>/posts/2b5beace/</url>
-    <content><![CDATA[<p>9个Markdown文档进阶写作技巧分享：</p>
-<ul>
-<li>显示特殊符号</li>
-<li>添加emoji表情符号🥰</li>
-<li>添加字体字号</li>
-<li>添加字体颜色和修改字体大小</li>
-<li>添加文字背景色</li>
-<li>添加 Todo 列表</li>
-<li>添加常用数学公式</li>
-<li>添加流程图、时序图和甘特图</li>
-<li>添加注意事项</li>
-</ul>
-<h2 id="显示特殊符号"><a href="#显示特殊符号" class="headerlink" title="显示特殊符号"></a>显示特殊符号</h2><ul>
-<li><a href="https://symbl.cc/cn/">SYMBL</a> - 特殊字符对应的Unicode码查询</li>
-<li>语法符号，前面加反斜线\即可显示符号本身，例如：</li>
-</ul>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">\\ 反斜杠 \* 星号</span><br><span class="line">\_ 下划线</span><br><span class="line">\&#123;\&#125; 括号</span><br><span class="line">\# 井号</span><br><span class="line">\+ 加号</span><br><span class="line">\- 减号</span><br><span class="line">\! 感叹号</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<p>\ 反斜杠 * 星号<br>_ 下划线<br>{} 括号<br># 井号<br>+ 加号<br>- 减号<br>! 感叹号</p>
-<h2 id="添加emoji表情符号🥰"><a href="#添加emoji表情符号🥰" class="headerlink" title="添加emoji表情符号🥰"></a>添加emoji表情符号🥰</h2><ul>
-<li><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">Emoji Cheat Sheet</a> - 给你的Markdown文档添加表情🍁</li>
-<li>去上面的网站即可复制粘贴，需要的表情包🤔</li>
-</ul>
-<h2 id="添加字体字号"><a href="#添加字体字号" class="headerlink" title="添加字体字号"></a>添加字体字号</h2><p>有时侯我们需要修改文字的字体字号，可是我们就会简单的“加粗”“斜体”等，这样子一来又觉得有点单调。<br>其实我们可以用HTML代码来改变Markdown文档的字体字号：</p>
-<ul>
-<li><a href="https://www.jb51.net/css/67658.html">CSS字体</a> - 让你的Markdown文档有更多的字体</li>
-<li>通过上面的网站查询到的字体名字 <code>&lt;font style=&quot;font-family:写入到这里&quot;&gt;&lt;/font&gt;</code></li>
-</ul>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;font-family: STKaiti;&quot;</span>&gt;</span>我是华文楷体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;font-family: STCaiyun;&quot;</span>&gt;</span>我是华文彩云体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;font-family: STXingkai;&quot;</span>&gt;</span>我是华文行楷<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<font style="font-family: STKaiti;">我是华文楷体</font><br>
-<font style="font-family: STCaiyun;">我是华文彩云体</font><br>
-<font style="font-family: STXingkai;">我是华文行楷</font>
-
-<h2 id="添加字体颜色和修改字体大小"><a href="#添加字体颜色和修改字体大小" class="headerlink" title="添加字体颜色和修改字体大小"></a>添加字体颜色和修改字体大小</h2><p>通过上面的学习你已经会使用HTML代码来改变Markdown文档的字体字号，同样Markdown文档也是可以通过HTML代码实现字体颜色：</p>
-<ul>
-<li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
-<li>通过上面查询到的颜色编码 <code>&lt;font color=&quot;写入到这里&quot; size=&quot;写入数值改变字体大小&quot;&gt;&lt;/font&gt;</code></li>
-</ul>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;LightSkyBlue&quot;</span> <span class="attr">size</span>=<span class="string">&quot;72&quot;</span>&gt;</span>亮天蓝色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;SpringGreen&quot;</span> <span class="attr">size</span>=<span class="string">&quot;42&quot;</span>&gt;</span>春绿色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;Red&quot;</span> <span class="attr">size</span>=<span class="string">&quot;6&quot;</span>&gt;</span>纯红色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<font color=LightSkyBlue size=72>亮天蓝色</font>
-
-<font color=SpringGreen size=42>春绿色</font>
-
-<font color=Red size=6>纯红色</font>
-
-<h2 id="添加文字背景色"><a href="#添加文字背景色" class="headerlink" title="添加文字背景色"></a>添加文字背景色</h2><p>Markdown本身不支持背景色设置，需要采用内置html的方式实现。<br>借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。例如：</p>
-<ul>
-<li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
-<li>通过上面查询到的颜色编码 <code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=&quot;写入到这里&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></li>
-</ul>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">&quot;LightSkyBlue&quot;</span>&gt;</span>背景色是：亮天蓝色<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">&quot;SpringGreen&quot;</span>&gt;</span>背景色是：春绿色<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">&quot;Red&quot;</span>&gt;</span>背景色是：纯红色<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<table><tr><td bgcolor=LightSkyBlue>背景色是：亮天蓝色</td></tr></table>
-<table><tr><td bgcolor=SpringGreen>背景色是：春绿色</td></tr></table>
-<table><tr><td bgcolor=Red>背景色是：纯红色</td></tr></table>
-
-<h2 id="添加-Todo-列表"><a href="#添加-Todo-列表" class="headerlink" title="添加 Todo 列表"></a>添加 Todo 列表</h2><ul>
-<li>使用 - [ ] 和 - [x] 语法可以创建复选框，实现 todo-list 等功能</li>
-<li>输入顺序：- 空格 [ 空格 ] 空格</li>
-</ul>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [ ] 未选中状态</span><br><span class="line"><span class="bullet">-</span> [x] 选中状态</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<ul>
-<li><p>[ ] 未选中状态</p>
-</li>
-<li><p>[x] 选中状态</p>
-</li>
-</ul>
-<h2 id="添加常用数学公式"><a href="#添加常用数学公式" class="headerlink" title="添加常用数学公式"></a>添加常用数学公式</h2><ul>
-<li><p><a href="https://blog.csdn.net/mingzhuo_126/article/details/82722455">数学公式</a> - 让你的Markdown文档添加公式</p>
-</li>
-<li><p>公式块 ，输入美元符（$）然后回车，中间输入相应代码，详细代码参考上方网站。例如：</p>
-</li>
-</ul>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\sin x =2  \sin x \cos</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line">$$</span><br><span class="line">e^&#123;i\pi&#125; + 1 = 0</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line">$$</span><br><span class="line">\begin&#123;Bmatrix&#125;</span><br><span class="line">   a &amp; b \\</span><br><span class="line">   c &amp; d</span><br><span class="line">\end&#123;Bmatrix&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<script type="math/tex; mode=display">
-\sin x =2  \sin x \cos</script><script type="math/tex; mode=display">
-e^{i\pi} + 1 = 0</script><script type="math/tex; mode=display">
-\begin{Bmatrix}
-   a & b \\
-   c & d
-\end{Bmatrix}</script><h2 id="添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和-C4-图"><a href="#添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和-C4-图" class="headerlink" title="添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和 C4 图"></a>添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和 C4 图</h2><h3 id="横向流程图"><a href="#横向流程图" class="headerlink" title="横向流程图"></a>横向流程图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">flowchart LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">B --&gt; C&#123;条件a&#125;</span><br><span class="line">C --&gt;|a=1| D[结果1]</span><br><span class="line">C --&gt;|a=2| E[结果2]</span><br><span class="line">F[横向流程图]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    flowchart LR
-A[方形] --&gt;B(圆角)
-B --&gt; C{条件a}
-C --&gt;|a&#x3D;1| D[结果1]
-C --&gt;|a&#x3D;2| E[结果2]
-F[横向流程图]
-  </pre></div>
-<h3 id="竖向流程图"><a href="#竖向流程图" class="headerlink" title="竖向流程图"></a>竖向流程图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">flowchart TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">B --&gt; C&#123;条件a&#125;</span><br><span class="line">C --&gt; |a=1| D[结果1]</span><br><span class="line">C --&gt; |a=2| E[结果2]</span><br><span class="line">F[竖向流程图]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    flowchart TD
-A[方形] --&gt; B(圆角)
-B --&gt; C{条件a}
-C --&gt; |a&#x3D;1| D[结果1]
-C --&gt; |a&#x3D;2| E[结果2]
-F[竖向流程图]
-  </pre></div>
-<h3 id="UML时序图"><a href="#UML时序图" class="headerlink" title="UML时序图"></a>UML时序图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">sequenceDiagram</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    sequenceDiagram
-对象A-&gt;对象B: 对象B你好吗?（请求）
-Note right of 对象B: 对象B的描述
-Note left of 对象A: 对象A的描述(提示)
-对象B--&gt;对象A: 我很好(响应)
-对象A-&gt;对象B: 你真的好吗？
-  </pre></div>
-<h3 id="UML复杂时序图"><a href="#UML复杂时序图" class="headerlink" title="UML复杂时序图"></a>UML复杂时序图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">sequenceDiagram</span><br><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    sequenceDiagram
-Title: 标题：复杂使用
-对象A-&gt;对象B: 对象B你好吗?（请求）
-Note right of 对象B: 对象B的描述
-Note left of 对象A: 对象A的描述(提示)
-对象B--&gt;对象A: 我很好(响应)
-对象B-&gt;小三: 你好吗
-小三--&gt;&gt;对象A: 对象B找我了
-对象A-&gt;对象B: 你真的好吗？
-Note over 小三,对象B: 我们是朋友
-participant C
-Note right of C: 没人陪我玩
-  </pre></div>
-<h3 id="甘特图"><a href="#甘特图" class="headerlink" title="甘特图"></a>甘特图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">%% 语法示例</span><br><span class="line">gantt</span><br><span class="line">section Section</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 软件开发甘特图</span><br><span class="line">section 设计</span><br><span class="line">需求 : done, des1, 2014-01-06,2014-01-08</span><br><span class="line">原型 : active, des2, 2014-01-09, 3d</span><br><span class="line">UI设计 : des3, after des2, 5d</span><br><span class="line">未来任务 : des4, after des3, 5d</span><br><span class="line">section 开发</span><br><span class="line">学习准备理解需求 : crit, done, 2014-01-06,24h</span><br><span class="line">设计框架 : crit, done, after des2, 2d</span><br><span class="line">开发 : crit, active, 3d</span><br><span class="line">未来任务 : crit, 5d</span><br><span class="line">耍 : 2d</span><br><span class="line">section 测试</span><br><span class="line">功能测试 : active, a1, after des3, 3d</span><br><span class="line">压力测试 : after a1, 20h</span><br><span class="line">测试报告 : 48h</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    gantt
-section Section
-dateFormat YYYY-MM-DD
-title 软件开发甘特图
-section 设计
-需求 : done, des1, 2014-01-06,2014-01-08
-原型 : active, des2, 2014-01-09, 3d
-UI设计 : des3, after des2, 5d
-未来任务 : des4, after des3, 5d
-section 开发
-学习准备理解需求 : crit, done, 2014-01-06,24h
-设计框架 : crit, done, after des2, 2d
-开发 : crit, active, 3d
-未来任务 : crit, 5d
-耍 : 2d
-section 测试
-功能测试 : active, a1, after des3, 3d
-压力测试 : after a1, 20h
-测试报告 : 48h
-  </pre></div>
-<h3 id="类别图"><a href="#类别图" class="headerlink" title="类别图"></a>类别图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">classDiagram</span><br><span class="line">Class01 &lt;|-- AveryLongClass : Cool</span><br><span class="line">&lt;<span class="language-xml"><span class="tag">&lt;<span class="name">Interface</span>&gt;</span></span>&gt; Class01</span><br><span class="line">Class09 --&gt; C2 : 我在哪里?</span><br><span class="line">Class09 --\* C3</span><br><span class="line">Class09 --|&gt; Class07</span><br><span class="line">Class07 : equals()</span><br><span class="line">Class07 : Object[] 元素数据</span><br><span class="line">Class01 : size()</span><br><span class="line">Class01 : int 黑猩猩</span><br><span class="line">Class01 : int 大猩猩</span><br><span class="line">class Class10 &#123;</span><br><span class="line">&lt;<span class="language-xml"><span class="tag">&lt;<span class="name">service</span>&gt;</span></span>&gt;</span><br><span class="line">int id</span><br><span class="line">size()</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    classDiagram
-Class01 &lt;|-- AveryLongClass : Cool
-&lt;&lt;Interface&gt;&gt; Class01
-Class09 --&gt; C2 : 我在哪里?
-Class09 --\* C3
-Class09 --|&gt; Class07
-Class07 : equals()
-Class07 : Object[] 元素数据
-Class01 : size()
-Class01 : int 黑猩猩
-Class01 : int 大猩猩
-class Class10 {
-&lt;&lt;service&gt;&gt;
-int id
-size()
-}
-  </pre></div>
-<h3 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">stateDiagram-v2</span><br><span class="line">[<span class="emphasis">*] --&gt; Still</span></span><br><span class="line"><span class="emphasis">Still --&gt; [*</span>]</span><br><span class="line">Still --&gt; Moving</span><br><span class="line">Moving --&gt; Still</span><br><span class="line">Moving --&gt; Crash</span><br><span class="line">Crash --&gt; [<span class="emphasis">*]</span></span><br><span class="line"><span class="emphasis">&#123;% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    stateDiagram-v2
-[*] --&gt; Still
-Still --&gt; [*]
-Still --&gt; Moving
-Moving --&gt; Still
-Moving --&gt; Crash
-Crash --&gt; [*]
-  </pre></div>
-<h3 id="饼型图"><a href="#饼型图" class="headerlink" title="饼型图"></a>饼型图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">pie</span><br><span class="line">&quot;狗&quot; : 386</span><br><span class="line">&quot;猫&quot; : 85</span><br><span class="line">&quot;其他&quot; : 15</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    pie
-&quot;狗&quot; : 386
-&quot;猫&quot; : 85
-&quot;其他&quot; : 15
-  </pre></div>
-<h3 id="用户体验旅程图"><a href="#用户体验旅程图" class="headerlink" title="用户体验旅程图"></a>用户体验旅程图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">journey</span><br><span class="line">title 我的工作日</span><br><span class="line">section 上班</span><br><span class="line">泡茶: 5: Me</span><br><span class="line">上楼: 3: Me</span><br><span class="line">工作: 1: Me, Cat</span><br><span class="line">section 回家</span><br><span class="line">下楼: 5: Me</span><br><span class="line">坐下: 3: Me</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    journey
-title 我的工作日
-section 上班
-泡茶: 5: Me
-上楼: 3: Me
-工作: 1: Me, Cat
-section 回家
-下楼: 5: Me
-坐下: 3: Me
-  </pre></div>
-<h3 id="C4-图"><a href="#C4-图" class="headerlink" title="C4 图"></a>C4 图</h3><p>例如：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">C4Context</span><br><span class="line">title System Context diagram for Internet Banking System</span><br><span class="line"></span><br><span class="line">Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)</span><br><span class="line">Person(customerB, &quot;Banking Customer B&quot;)</span><br><span class="line">Person<span class="emphasis">_Ext(customerC, &quot;Banking Customer C&quot;)</span></span><br><span class="line"><span class="emphasis">System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, <span class="language-xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span> with personal bank accounts.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">Enterprise_</span>Boundary(b1, &quot;BankBoundary&quot;) &#123;</span><br><span class="line"></span><br><span class="line">SystemDb<span class="emphasis">_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">System_</span>Boundary(b2, &quot;BankBoundary2&quot;) &#123;</span><br><span class="line">System(SystemA, &quot;Banking System A&quot;)</span><br><span class="line">System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">System<span class="emphasis">_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)</span></span><br><span class="line"><span class="emphasis">SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) &#123;</span></span><br><span class="line"><span class="emphasis">SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span></span><br><span class="line"><span class="emphasis">SystemQueue_</span>Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">BiRel(customerA, SystemAA, &quot;Uses&quot;)</span><br><span class="line">BiRel(SystemAA, SystemE, &quot;Uses&quot;)</span><br><span class="line">Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)</span><br><span class="line">Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
-    C4Context
-title System Context diagram for Internet Banking System
-
-Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)
-Person(customerB, &quot;Banking Customer B&quot;)
-Person_Ext(customerC, &quot;Banking Customer C&quot;)
-System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)
-
-Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, &lt;br&#x2F;&gt; with personal bank accounts.&quot;)
-
-Enterprise_Boundary(b1, &quot;BankBoundary&quot;) {
-
-SystemDb_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
-
-System_Boundary(b2, &quot;BankBoundary2&quot;) {
-System(SystemA, &quot;Banking System A&quot;)
-System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
-}
-
-System_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)
-SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
-
-Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) {
-SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
-SystemQueue_Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
-}
-}
-
-BiRel(customerA, SystemAA, &quot;Uses&quot;)
-BiRel(SystemAA, SystemE, &quot;Uses&quot;)
-Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)
-Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
-  </pre></div>
-<h2 id="添加注意事项"><a href="#添加注意事项" class="headerlink" title="添加注意事项"></a>添加注意事项</h2><ul>
-<li>输入三个反单引号 ``` 再输入 notice 回车即可输入注意事项，例如：</li>
-</ul>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```notice</span></span><br><span class="line"><span class="code">这个是一个注意事项</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-<p>演示：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">这个是一个注意事项</span><br></pre></td></tr></table></figure>
-<p><br></p>
-<hr>
-<p>参考文章：</p>
-<ul>
-<li><a href="https://www.runoob.com/markdown/md-advance.html">Markdown - 菜鸟教程</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>运维笔记</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>写作技巧</tag>
-        <tag>排版优化</tag>
       </tags>
   </entry>
   <entry>
@@ -777,6 +501,448 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
       </tags>
   </entry>
   <entry>
+    <title>Markdown进阶写作技巧：排版优化与效率提升指南</title>
+    <url>/posts/2b5beace/</url>
+    <content><![CDATA[<p>9个Markdown文档进阶写作技巧分享：</p>
+<ul>
+<li>显示特殊符号</li>
+<li>添加emoji表情符号🥰</li>
+<li>添加字体字号</li>
+<li>添加字体颜色和修改字体大小</li>
+<li>添加文字背景色</li>
+<li>添加 Todo 列表</li>
+<li>添加常用数学公式</li>
+<li>添加流程图、时序图和甘特图</li>
+<li>添加注意事项</li>
+</ul>
+<h2 id="显示特殊符号"><a href="#显示特殊符号" class="headerlink" title="显示特殊符号"></a>显示特殊符号</h2><ul>
+<li><a href="https://symbl.cc/cn/">SYMBL</a> - 特殊字符对应的Unicode码查询</li>
+<li>语法符号，前面加反斜线\即可显示符号本身，例如：</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">\\ 反斜杠 \* 星号</span><br><span class="line">\_ 下划线</span><br><span class="line">\&#123;\&#125; 括号</span><br><span class="line">\# 井号</span><br><span class="line">\+ 加号</span><br><span class="line">\- 减号</span><br><span class="line">\! 感叹号</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<p>\ 反斜杠 * 星号<br>_ 下划线<br>{} 括号<br># 井号<br>+ 加号<br>- 减号<br>! 感叹号</p>
+<h2 id="添加emoji表情符号🥰"><a href="#添加emoji表情符号🥰" class="headerlink" title="添加emoji表情符号🥰"></a>添加emoji表情符号🥰</h2><ul>
+<li><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">Emoji Cheat Sheet</a> - 给你的Markdown文档添加表情🍁</li>
+<li>去上面的网站即可复制粘贴，需要的表情包🤔</li>
+</ul>
+<h2 id="添加字体字号"><a href="#添加字体字号" class="headerlink" title="添加字体字号"></a>添加字体字号</h2><p>有时侯我们需要修改文字的字体字号，可是我们就会简单的“加粗”“斜体”等，这样子一来又觉得有点单调。<br>其实我们可以用HTML代码来改变Markdown文档的字体字号：</p>
+<ul>
+<li><a href="https://www.jb51.net/css/67658.html">CSS字体</a> - 让你的Markdown文档有更多的字体</li>
+<li>通过上面的网站查询到的字体名字 <code>&lt;font style=&quot;font-family:写入到这里&quot;&gt;&lt;/font&gt;</code></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;font-family: STKaiti;&quot;</span>&gt;</span>我是华文楷体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;font-family: STCaiyun;&quot;</span>&gt;</span>我是华文彩云体<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;font-family: STXingkai;&quot;</span>&gt;</span>我是华文行楷<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<font style="font-family: STKaiti;">我是华文楷体</font><br>
+<font style="font-family: STCaiyun;">我是华文彩云体</font><br>
+<font style="font-family: STXingkai;">我是华文行楷</font>
+
+<h2 id="添加字体颜色和修改字体大小"><a href="#添加字体颜色和修改字体大小" class="headerlink" title="添加字体颜色和修改字体大小"></a>添加字体颜色和修改字体大小</h2><p>通过上面的学习你已经会使用HTML代码来改变Markdown文档的字体字号，同样Markdown文档也是可以通过HTML代码实现字体颜色：</p>
+<ul>
+<li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
+<li>通过上面查询到的颜色编码 <code>&lt;font color=&quot;写入到这里&quot; size=&quot;写入数值改变字体大小&quot;&gt;&lt;/font&gt;</code></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;LightSkyBlue&quot;</span> <span class="attr">size</span>=<span class="string">&quot;72&quot;</span>&gt;</span>亮天蓝色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;SpringGreen&quot;</span> <span class="attr">size</span>=<span class="string">&quot;42&quot;</span>&gt;</span>春绿色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;Red&quot;</span> <span class="attr">size</span>=<span class="string">&quot;6&quot;</span>&gt;</span>纯红色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<font color=LightSkyBlue size=72>亮天蓝色</font>
+
+<font color=SpringGreen size=42>春绿色</font>
+
+<font color=Red size=6>纯红色</font>
+
+<h2 id="添加文字背景色"><a href="#添加文字背景色" class="headerlink" title="添加文字背景色"></a>添加文字背景色</h2><p>Markdown本身不支持背景色设置，需要采用内置html的方式实现。<br>借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。例如：</p>
+<ul>
+<li><a href="http://xh.5156edu.com/page/z1015m9220j18754.html">CSS颜色</a> - 让你的Markdown文档字体有更多的颜色</li>
+<li>通过上面查询到的颜色编码 <code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=&quot;写入到这里&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">&quot;LightSkyBlue&quot;</span>&gt;</span>背景色是：亮天蓝色<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">&quot;SpringGreen&quot;</span>&gt;</span>背景色是：春绿色<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">&quot;Red&quot;</span>&gt;</span>背景色是：纯红色<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<table><tr><td bgcolor=LightSkyBlue>背景色是：亮天蓝色</td></tr></table>
+<table><tr><td bgcolor=SpringGreen>背景色是：春绿色</td></tr></table>
+<table><tr><td bgcolor=Red>背景色是：纯红色</td></tr></table>
+
+<h2 id="添加-Todo-列表"><a href="#添加-Todo-列表" class="headerlink" title="添加 Todo 列表"></a>添加 Todo 列表</h2><ul>
+<li>使用 - [ ] 和 - [x] 语法可以创建复选框，实现 todo-list 等功能</li>
+<li>输入顺序：- 空格 [ 空格 ] 空格</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [ ] 未选中状态</span><br><span class="line"><span class="bullet">-</span> [x] 选中状态</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<ul>
+<li><p>[ ] 未选中状态</p>
+</li>
+<li><p>[x] 选中状态</p>
+</li>
+</ul>
+<h2 id="添加常用数学公式"><a href="#添加常用数学公式" class="headerlink" title="添加常用数学公式"></a>添加常用数学公式</h2><ul>
+<li><p><a href="https://blog.csdn.net/mingzhuo_126/article/details/82722455">数学公式</a> - 让你的Markdown文档添加公式</p>
+</li>
+<li><p>公式块 ，输入美元符（$）然后回车，中间输入相应代码，详细代码参考上方网站。例如：</p>
+</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\sin x =2  \sin x \cos</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line">$$</span><br><span class="line">e^&#123;i\pi&#125; + 1 = 0</span><br><span class="line">$$</span><br><span class="line"></span><br><span class="line">$$</span><br><span class="line">\begin&#123;Bmatrix&#125;</span><br><span class="line">   a &amp; b \\</span><br><span class="line">   c &amp; d</span><br><span class="line">\end&#123;Bmatrix&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<script type="math/tex; mode=display">
+\sin x =2  \sin x \cos</script><script type="math/tex; mode=display">
+e^{i\pi} + 1 = 0</script><script type="math/tex; mode=display">
+\begin{Bmatrix}
+   a & b \\
+   c & d
+\end{Bmatrix}</script><h2 id="添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和-C4-图"><a href="#添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和-C4-图" class="headerlink" title="添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和 C4 图"></a>添加流程图、时序图、甘特图、类别图、状态图、饼型图、用户体验旅程图和 C4 图</h2><h3 id="横向流程图"><a href="#横向流程图" class="headerlink" title="横向流程图"></a>横向流程图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">flowchart LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">B --&gt; C&#123;条件a&#125;</span><br><span class="line">C --&gt;|a=1| D[结果1]</span><br><span class="line">C --&gt;|a=2| E[结果2]</span><br><span class="line">F[横向流程图]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    flowchart LR
+A[方形] --&gt;B(圆角)
+B --&gt; C{条件a}
+C --&gt;|a&#x3D;1| D[结果1]
+C --&gt;|a&#x3D;2| E[结果2]
+F[横向流程图]
+  </pre></div>
+<h3 id="竖向流程图"><a href="#竖向流程图" class="headerlink" title="竖向流程图"></a>竖向流程图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">flowchart TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">B --&gt; C&#123;条件a&#125;</span><br><span class="line">C --&gt; |a=1| D[结果1]</span><br><span class="line">C --&gt; |a=2| E[结果2]</span><br><span class="line">F[竖向流程图]</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    flowchart TD
+A[方形] --&gt; B(圆角)
+B --&gt; C{条件a}
+C --&gt; |a&#x3D;1| D[结果1]
+C --&gt; |a&#x3D;2| E[结果2]
+F[竖向流程图]
+  </pre></div>
+<h3 id="UML时序图"><a href="#UML时序图" class="headerlink" title="UML时序图"></a>UML时序图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">sequenceDiagram</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    sequenceDiagram
+对象A-&gt;对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B--&gt;对象A: 我很好(响应)
+对象A-&gt;对象B: 你真的好吗？
+  </pre></div>
+<h3 id="UML复杂时序图"><a href="#UML复杂时序图" class="headerlink" title="UML复杂时序图"></a>UML复杂时序图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">sequenceDiagram</span><br><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    sequenceDiagram
+Title: 标题：复杂使用
+对象A-&gt;对象B: 对象B你好吗?（请求）
+Note right of 对象B: 对象B的描述
+Note left of 对象A: 对象A的描述(提示)
+对象B--&gt;对象A: 我很好(响应)
+对象B-&gt;小三: 你好吗
+小三--&gt;&gt;对象A: 对象B找我了
+对象A-&gt;对象B: 你真的好吗？
+Note over 小三,对象B: 我们是朋友
+participant C
+Note right of C: 没人陪我玩
+  </pre></div>
+<h3 id="甘特图"><a href="#甘特图" class="headerlink" title="甘特图"></a>甘特图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">%% 语法示例</span><br><span class="line">gantt</span><br><span class="line">section Section</span><br><span class="line">dateFormat YYYY-MM-DD</span><br><span class="line">title 软件开发甘特图</span><br><span class="line">section 设计</span><br><span class="line">需求 : done, des1, 2014-01-06,2014-01-08</span><br><span class="line">原型 : active, des2, 2014-01-09, 3d</span><br><span class="line">UI设计 : des3, after des2, 5d</span><br><span class="line">未来任务 : des4, after des3, 5d</span><br><span class="line">section 开发</span><br><span class="line">学习准备理解需求 : crit, done, 2014-01-06,24h</span><br><span class="line">设计框架 : crit, done, after des2, 2d</span><br><span class="line">开发 : crit, active, 3d</span><br><span class="line">未来任务 : crit, 5d</span><br><span class="line">耍 : 2d</span><br><span class="line">section 测试</span><br><span class="line">功能测试 : active, a1, after des3, 3d</span><br><span class="line">压力测试 : after a1, 20h</span><br><span class="line">测试报告 : 48h</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    gantt
+section Section
+dateFormat YYYY-MM-DD
+title 软件开发甘特图
+section 设计
+需求 : done, des1, 2014-01-06,2014-01-08
+原型 : active, des2, 2014-01-09, 3d
+UI设计 : des3, after des2, 5d
+未来任务 : des4, after des3, 5d
+section 开发
+学习准备理解需求 : crit, done, 2014-01-06,24h
+设计框架 : crit, done, after des2, 2d
+开发 : crit, active, 3d
+未来任务 : crit, 5d
+耍 : 2d
+section 测试
+功能测试 : active, a1, after des3, 3d
+压力测试 : after a1, 20h
+测试报告 : 48h
+  </pre></div>
+<h3 id="类别图"><a href="#类别图" class="headerlink" title="类别图"></a>类别图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">classDiagram</span><br><span class="line">Class01 &lt;|-- AveryLongClass : Cool</span><br><span class="line">&lt;<span class="language-xml"><span class="tag">&lt;<span class="name">Interface</span>&gt;</span></span>&gt; Class01</span><br><span class="line">Class09 --&gt; C2 : 我在哪里?</span><br><span class="line">Class09 --\* C3</span><br><span class="line">Class09 --|&gt; Class07</span><br><span class="line">Class07 : equals()</span><br><span class="line">Class07 : Object[] 元素数据</span><br><span class="line">Class01 : size()</span><br><span class="line">Class01 : int 黑猩猩</span><br><span class="line">Class01 : int 大猩猩</span><br><span class="line">class Class10 &#123;</span><br><span class="line">&lt;<span class="language-xml"><span class="tag">&lt;<span class="name">service</span>&gt;</span></span>&gt;</span><br><span class="line">int id</span><br><span class="line">size()</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+&lt;&lt;Interface&gt;&gt; Class01
+Class09 --&gt; C2 : 我在哪里?
+Class09 --\* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] 元素数据
+Class01 : size()
+Class01 : int 黑猩猩
+Class01 : int 大猩猩
+class Class10 {
+&lt;&lt;service&gt;&gt;
+int id
+size()
+}
+  </pre></div>
+<h3 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">stateDiagram-v2</span><br><span class="line">[<span class="emphasis">*] --&gt; Still</span></span><br><span class="line"><span class="emphasis">Still --&gt; [*</span>]</span><br><span class="line">Still --&gt; Moving</span><br><span class="line">Moving --&gt; Still</span><br><span class="line">Moving --&gt; Crash</span><br><span class="line">Crash --&gt; [<span class="emphasis">*]</span></span><br><span class="line"><span class="emphasis">&#123;% endmermaid %&#125;</span></span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    stateDiagram-v2
+[*] --&gt; Still
+Still --&gt; [*]
+Still --&gt; Moving
+Moving --&gt; Still
+Moving --&gt; Crash
+Crash --&gt; [*]
+  </pre></div>
+<h3 id="饼型图"><a href="#饼型图" class="headerlink" title="饼型图"></a>饼型图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">pie</span><br><span class="line">&quot;狗&quot; : 386</span><br><span class="line">&quot;猫&quot; : 85</span><br><span class="line">&quot;其他&quot; : 15</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    pie
+&quot;狗&quot; : 386
+&quot;猫&quot; : 85
+&quot;其他&quot; : 15
+  </pre></div>
+<h3 id="用户体验旅程图"><a href="#用户体验旅程图" class="headerlink" title="用户体验旅程图"></a>用户体验旅程图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">journey</span><br><span class="line">title 我的工作日</span><br><span class="line">section 上班</span><br><span class="line">泡茶: 5: Me</span><br><span class="line">上楼: 3: Me</span><br><span class="line">工作: 1: Me, Cat</span><br><span class="line">section 回家</span><br><span class="line">下楼: 5: Me</span><br><span class="line">坐下: 3: Me</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    journey
+title 我的工作日
+section 上班
+泡茶: 5: Me
+上楼: 3: Me
+工作: 1: Me, Cat
+section 回家
+下楼: 5: Me
+坐下: 3: Me
+  </pre></div>
+<h3 id="C4-图"><a href="#C4-图" class="headerlink" title="C4 图"></a>C4 图</h3><p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% mermaid %&#125;</span><br><span class="line">C4Context</span><br><span class="line">title System Context diagram for Internet Banking System</span><br><span class="line"></span><br><span class="line">Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)</span><br><span class="line">Person(customerB, &quot;Banking Customer B&quot;)</span><br><span class="line">Person<span class="emphasis">_Ext(customerC, &quot;Banking Customer C&quot;)</span></span><br><span class="line"><span class="emphasis">System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, <span class="language-xml"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span> with personal bank accounts.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">Enterprise_</span>Boundary(b1, &quot;BankBoundary&quot;) &#123;</span><br><span class="line"></span><br><span class="line">SystemDb<span class="emphasis">_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">System_</span>Boundary(b2, &quot;BankBoundary2&quot;) &#123;</span><br><span class="line">System(SystemA, &quot;Banking System A&quot;)</span><br><span class="line">System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">System<span class="emphasis">_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)</span></span><br><span class="line"><span class="emphasis">SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) &#123;</span></span><br><span class="line"><span class="emphasis">SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span></span><br><span class="line"><span class="emphasis">SystemQueue_</span>Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">BiRel(customerA, SystemAA, &quot;Uses&quot;)</span><br><span class="line">BiRel(SystemAA, SystemE, &quot;Uses&quot;)</span><br><span class="line">Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)</span><br><span class="line">Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)</span><br><span class="line">&#123;% endmermaid %&#125;</span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<div class="mermaid-wrap"><pre class="mermaid-src" data-config="{}" hidden>
+    C4Context
+title System Context diagram for Internet Banking System
+
+Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)
+Person(customerB, &quot;Banking Customer B&quot;)
+Person_Ext(customerC, &quot;Banking Customer C&quot;)
+System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)
+
+Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, &lt;br&#x2F;&gt; with personal bank accounts.&quot;)
+
+Enterprise_Boundary(b1, &quot;BankBoundary&quot;) {
+
+SystemDb_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
+
+System_Boundary(b2, &quot;BankBoundary2&quot;) {
+System(SystemA, &quot;Banking System A&quot;)
+System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+}
+
+System_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)
+SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+
+Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) {
+SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+SystemQueue_Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+}
+}
+
+BiRel(customerA, SystemAA, &quot;Uses&quot;)
+BiRel(SystemAA, SystemE, &quot;Uses&quot;)
+Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)
+Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
+  </pre></div>
+<h2 id="添加注意事项"><a href="#添加注意事项" class="headerlink" title="添加注意事项"></a>添加注意事项</h2><ul>
+<li>输入三个反单引号 ``` 再输入 notice 回车即可输入注意事项，例如：</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```notice</span></span><br><span class="line"><span class="code">这个是一个注意事项</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+<p>演示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">这个是一个注意事项</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<hr>
+<p>参考文章：</p>
+<ul>
+<li><a href="https://www.runoob.com/markdown/md-advance.html">Markdown - 菜鸟教程</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>运维笔记</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>写作技巧</tag>
+        <tag>排版优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Valine评论系统配置：基于LeanCloud实现邮件实时提醒</title>
+    <url>/posts/673e8029/</url>
+    <content><![CDATA[<p>Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。</p>
+<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><ul>
+<li>获取邮箱 SMTP 密钥</li>
+</ul>
+<!-- - 获取 AKisemt 反垃圾邮件服务 -->
+<ul>
+<li><p>获取 valine-admin 项目</p>
+</li>
+<li><p>登录 LeanCloud 部署项目</p>
+</li>
+<li><p>配置项目环境变量</p>
+</li>
+<li><p>设置后台管理</p>
+</li>
+</ul>
+<p>如果在第一次部署时遇到问题，您可以尝试多次部署，可能由于网络波动或其他因素导致第一次部署失败。多次尝试部署有助于解决这个问题。</p>
+<h2 id="获取邮箱-SMTP-密钥"><a href="#获取邮箱-SMTP-密钥" class="headerlink" title="获取邮箱 SMTP 密钥"></a>获取邮箱 SMTP 密钥</h2><p>SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参考以下链接：</p>
+<ul>
+<li><p><a href="https://zhidao.baidu.com/question/1457961254794148260.html?fr=search&amp;word=QQ%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">QQ 邮箱获取方法</a></p>
+</li>
+<li><p><a href="https://zhidao.baidu.com/question/436573565774794892.html?fr=search&amp;word=163%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">163 邮箱获取方法</a></p>
+</li>
+</ul>
+<p>其他邮箱的设置方法可以自行搜索。</p>
+<!-- ### 获取 AKisemt 反垃圾邮件服务步骤：
+
+- 1.这个可以不设置，如果你想要注册并使用反垃圾邮件功能，需要先科学上网。
+
+- 2.在 [Akismet](https://wordpress.com/start/account/user-social?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fakismet.com%252Faccount%252F) 上注册并登录账号。
+
+![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300038985.png)
+![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039525.png)
+
+- 3.注册后，确认你的邮箱以完成登录。
+
+- 4.进入[服务页面](https://akismet.com/pricing/)，选择适合你的服务。
+
+![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039375.png)
+
+- 5.根据你的需求选择付费金额，如果你选择免费版本，请注意不能用于商业活动。
+
+![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039478.png)
+
+- 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
+
+![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040419.png)
+![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040054.png) -->
+<h2 id="获取-valine-admin-项目"><a href="#获取-valine-admin-项目" class="headerlink" title="获取 valine-admin 项目"></a>获取 valine-admin 项目</h2><ul>
+<li><p><a href="https://github.com/bin862324915/valine-admin">项目地址</a></p>
+</li>
+<li><p>复制此链接以备后用：<code>https://github.com/bin862324915/valine-admin</code></p>
+</li>
+<li><p>记住分支以备后用：<code>main</code></p>
+</li>
+</ul>
+<h2 id="登录-LeanCloud-并部署项目"><a href="#登录-LeanCloud-并部署项目" class="headerlink" title="登录 LeanCloud 并部署项目"></a>登录 LeanCloud 并部署项目</h2><ul>
+<li><p>1.在 <a href="https://console.leancloud.cn/">LeanCloud</a> 上登录并创建云引擎</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040076.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040534.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040808.png" alt="创建云引擎"></p>
+</li>
+<li><p>2.通过 Git 方式部署项目</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041197.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041104.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041194.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041737.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041016.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041009.png" alt="部署项目"></p>
+</li>
+</ul>
+<h2 id="配置项目环境变量"><a href="#配置项目环境变量" class="headerlink" title="配置项目环境变量"></a>配置项目环境变量</h2><p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042051.png" alt="环境变量"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042654.png" alt="环境变量"></p>
+<p>请按照以下表格填写相应的项目环境变量：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">变量名</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SENDER_NAME</td>
+<td style="text-align:center">寄件人名称</td>
+<td style="text-align:center">ChenPeiming — 评论提醒</td>
+</tr>
+<tr>
+<td style="text-align:center">SITE_NAME</td>
+<td style="text-align:center">[必填]网站名称</td>
+<td style="text-align:center">ChenPeiming</td>
+</tr>
+<tr>
+<td style="text-align:center">SITE_URL</td>
+<td style="text-align:center">[必填]网站地址，地址后方不带 /</td>
+<td style="text-align:center"><a href="https://chenpeiming52001.github.io">https://chenpeiming52001.github.io</a></td>
+</tr>
+<tr>
+<td style="text-align:center">SMTP_SERVICE</td>
+<td style="text-align:center">[必填]邮件服务提供商，支持 QQ、163、126 等</td>
+<td style="text-align:center">QQ</td>
+</tr>
+<tr>
+<td style="text-align:center">SMTP_USER</td>
+<td style="text-align:center">[必填]SMTP 服务用户名，及邮箱地址</td>
+<td style="text-align:center"><a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#49;&#50;&#51;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#x6d;">&#49;&#50;&#51;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#x6d;</a></td>
+</tr>
+<tr>
+<td style="text-align:center">SMTP_PASS</td>
+<td style="text-align:center">[必填]SMTP 密码，及授权码</td>
+<td style="text-align:center">123</td>
+</tr>
+<tr>
+<td style="text-align:center">TEMPLATE_NAME</td>
+<td style="text-align:center">邮件模板，默认 default，可以选 rainbow</td>
+<td style="text-align:center">rainbow</td>
+</tr>
+<tr>
+<td style="text-align:center">TO_EMAIL</td>
+<td style="text-align:center">自定义博主收件人</td>
+<td style="text-align:center"><a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#99;&#104;&#x65;&#110;&#x70;&#101;&#x69;&#x6d;&#x69;&#110;&#x67;&#x35;&#x32;&#48;&#x30;&#49;&#x40;&#49;&#54;&#51;&#46;&#99;&#111;&#109;">&#99;&#104;&#x65;&#110;&#x70;&#101;&#x69;&#x6d;&#x69;&#110;&#x67;&#x35;&#x32;&#48;&#x30;&#49;&#x40;&#49;&#54;&#51;&#46;&#99;&#111;&#109;</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="设置后台管理"><a href="#设置后台管理" class="headerlink" title="设置后台管理"></a>设置后台管理</h2><ul>
+<li><p>添加 <code>email</code>、<code>password</code> 和 <code>username</code></p>
+</li>
+<li><p>请注意，<code>email</code> 必须是 <code>SMTP_USER</code> 或 <code>TO_EMAIL</code> 中的一个</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042458.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042100.png" alt="后台管理"></p>
+</li>
+<li><p>配置访问域名（需要注册有域名）</p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046495.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046160.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046024.png" alt="后台管理"></p>
+</li>
+</ul>
+<p>绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了</p>
+<h2 id="邮件展示"><a href="#邮件展示" class="headerlink" title="邮件展示"></a>邮件展示</h2><ul>
+<li><p>邮件模板：default</p>
+<ul>
+<li>评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046287.png" alt="default"></p>
+<ul>
+<li>回复评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046316.png" alt="default"></p>
+</li>
+<li><p>邮件模板：rainbow</p>
+<ul>
+<li>评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048681.png" alt="rainbow"></p>
+<ul>
+<li>回复评论</li>
+</ul>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048647.png" alt="rainbow"></p>
+</li>
+</ul>
+<p><br></p>
+<hr>
+]]></content>
+      <categories>
+        <category>运维笔记</category>
+      </categories>
+      <tags>
+        <tag>Jekyll</tag>
+        <tag>评论系统</tag>
+        <tag>LeanCloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>玩客云刷机指南：刷入 CasaOS 打造轻量 NAS 替代方案</title>
     <url>/posts/b065c228/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>玩客云，一款硬件性能出色的智能存储设备。轻 NAC 系统（CasaOS）以其简洁高效的优势，深受众多用户喜爱。将玩客云刷入 CasaOS 系统，能充分挖掘其潜力，带来全新功能和体验。下面，我将为大家详细介绍玩客云刷入 CasaOS 的具体步骤，并分享其优势，希望能激发大家对刷机过程的兴趣。</p>
@@ -1012,268 +1178,10 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
         <category>运维笔记</category>
       </categories>
       <tags>
+        <tag>评论系统</tag>
+        <tag>LeanCloud</tag>
         <tag>Waline</tag>
         <tag>Valine</tag>
-        <tag>LeanCloud</tag>
-        <tag>评论系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Valine评论系统配置：基于LeanCloud实现邮件实时提醒</title>
-    <url>/posts/673e8029/</url>
-    <content><![CDATA[<p>Valine 是一个基于 LeanCloud 的快速、简洁且高效的无后端评论系统。它具有强大的功能和灵活的配置选项，本文将向您介绍如何在 Valine-admin 中设置评论邮件提醒功能，以便及时收到用户对您博客的评论通知。</p>
-<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><ul>
-<li>获取邮箱 SMTP 密钥</li>
-</ul>
-<!-- - 获取 AKisemt 反垃圾邮件服务 -->
-<ul>
-<li><p>获取 valine-admin 项目</p>
-</li>
-<li><p>登录 LeanCloud 部署项目</p>
-</li>
-<li><p>配置项目环境变量</p>
-</li>
-<li><p>设置后台管理</p>
-</li>
-</ul>
-<p>如果在第一次部署时遇到问题，您可以尝试多次部署，可能由于网络波动或其他因素导致第一次部署失败。多次尝试部署有助于解决这个问题。</p>
-<h2 id="获取邮箱-SMTP-密钥"><a href="#获取邮箱-SMTP-密钥" class="headerlink" title="获取邮箱 SMTP 密钥"></a>获取邮箱 SMTP 密钥</h2><p>SMTP 密钥是用于配置项目中的发邮件邮箱的。获取方法可以参考以下链接：</p>
-<ul>
-<li><p><a href="https://zhidao.baidu.com/question/1457961254794148260.html?fr=search&amp;word=QQ%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">QQ 邮箱获取方法</a></p>
-</li>
-<li><p><a href="https://zhidao.baidu.com/question/436573565774794892.html?fr=search&amp;word=163%E9%82%AE%E7%AE%B1%E8%8E%B7%E5%8F%96+MSTP+%E6%96%B9%E6%B3%95">163 邮箱获取方法</a></p>
-</li>
-</ul>
-<p>其他邮箱的设置方法可以自行搜索。</p>
-<!-- ### 获取 AKisemt 反垃圾邮件服务步骤：
-
-- 1.这个可以不设置，如果你想要注册并使用反垃圾邮件功能，需要先科学上网。
-
-- 2.在 [Akismet](https://wordpress.com/start/account/user-social?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fakismet.com%252Faccount%252F) 上注册并登录账号。
-
-![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300038985.png)
-![注册Akismet](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039525.png)
-
-- 3.注册后，确认你的邮箱以完成登录。
-
-- 4.进入[服务页面](https://akismet.com/pricing/)，选择适合你的服务。
-
-![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039375.png)
-
-- 5.根据你的需求选择付费金额，如果你选择免费版本，请注意不能用于商业活动。
-
-![选择Akismet服务](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300039478.png)
-
-- 6.我这里选择免费，确认付款信息，然后你就可以获得到 Api 。
-
-![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040419.png)
-![确认服务费用](https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040054.png) -->
-<h2 id="获取-valine-admin-项目"><a href="#获取-valine-admin-项目" class="headerlink" title="获取 valine-admin 项目"></a>获取 valine-admin 项目</h2><ul>
-<li><p><a href="https://github.com/bin862324915/valine-admin">项目地址</a></p>
-</li>
-<li><p>复制此链接以备后用：<code>https://github.com/bin862324915/valine-admin</code></p>
-</li>
-<li><p>记住分支以备后用：<code>main</code></p>
-</li>
-</ul>
-<h2 id="登录-LeanCloud-并部署项目"><a href="#登录-LeanCloud-并部署项目" class="headerlink" title="登录 LeanCloud 并部署项目"></a>登录 LeanCloud 并部署项目</h2><ul>
-<li><p>1.在 <a href="https://console.leancloud.cn/">LeanCloud</a> 上登录并创建云引擎</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040076.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040534.png" alt="创建云引擎"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300040808.png" alt="创建云引擎"></p>
-</li>
-<li><p>2.通过 Git 方式部署项目</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041197.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041104.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041194.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041737.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041016.png" alt="部署项目"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300041009.png" alt="部署项目"></p>
-</li>
-</ul>
-<h2 id="配置项目环境变量"><a href="#配置项目环境变量" class="headerlink" title="配置项目环境变量"></a>配置项目环境变量</h2><p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042051.png" alt="环境变量"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042654.png" alt="环境变量"></p>
-<p>请按照以下表格填写相应的项目环境变量：</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">变量名</th>
-<th style="text-align:center">说明</th>
-<th style="text-align:center">示例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">SENDER_NAME</td>
-<td style="text-align:center">寄件人名称</td>
-<td style="text-align:center">ChenPeiming — 评论提醒</td>
-</tr>
-<tr>
-<td style="text-align:center">SITE_NAME</td>
-<td style="text-align:center">[必填]网站名称</td>
-<td style="text-align:center">ChenPeiming</td>
-</tr>
-<tr>
-<td style="text-align:center">SITE_URL</td>
-<td style="text-align:center">[必填]网站地址，地址后方不带 /</td>
-<td style="text-align:center"><a href="https://chenpeiming52001.github.io">https://chenpeiming52001.github.io</a></td>
-</tr>
-<tr>
-<td style="text-align:center">SMTP_SERVICE</td>
-<td style="text-align:center">[必填]邮件服务提供商，支持 QQ、163、126 等</td>
-<td style="text-align:center">QQ</td>
-</tr>
-<tr>
-<td style="text-align:center">SMTP_USER</td>
-<td style="text-align:center">[必填]SMTP 服务用户名，及邮箱地址</td>
-<td style="text-align:center"><a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#49;&#x32;&#51;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#49;&#x32;&#51;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></td>
-</tr>
-<tr>
-<td style="text-align:center">SMTP_PASS</td>
-<td style="text-align:center">[必填]SMTP 密码，及授权码</td>
-<td style="text-align:center">123</td>
-</tr>
-<tr>
-<td style="text-align:center">TEMPLATE_NAME</td>
-<td style="text-align:center">邮件模板，默认 default，可以选 rainbow</td>
-<td style="text-align:center">rainbow</td>
-</tr>
-<tr>
-<td style="text-align:center">TO_EMAIL</td>
-<td style="text-align:center">自定义博主收件人</td>
-<td style="text-align:center"><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#99;&#104;&#101;&#x6e;&#x70;&#101;&#105;&#109;&#x69;&#110;&#103;&#53;&#50;&#x30;&#48;&#49;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;">&#99;&#104;&#101;&#x6e;&#x70;&#101;&#105;&#109;&#x69;&#110;&#103;&#53;&#50;&#x30;&#48;&#49;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="设置后台管理"><a href="#设置后台管理" class="headerlink" title="设置后台管理"></a>设置后台管理</h2><ul>
-<li><p>添加 <code>email</code>、<code>password</code> 和 <code>username</code></p>
-</li>
-<li><p>请注意，<code>email</code> 必须是 <code>SMTP_USER</code> 或 <code>TO_EMAIL</code> 中的一个</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042458.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300042100.png" alt="后台管理"></p>
-</li>
-<li><p>配置访问域名（需要注册有域名）</p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046495.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046160.png" alt="后台管理"><br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046024.png" alt="后台管理"></p>
-</li>
-</ul>
-<p>绑定好后就可以登录后台管理评论信息，我没有域名就不做相关的演示了</p>
-<h2 id="邮件展示"><a href="#邮件展示" class="headerlink" title="邮件展示"></a>邮件展示</h2><ul>
-<li><p>邮件模板：default</p>
-<ul>
-<li>评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046287.png" alt="default"></p>
-<ul>
-<li>回复评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300046316.png" alt="default"></p>
-</li>
-<li><p>邮件模板：rainbow</p>
-<ul>
-<li>评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048681.png" alt="rainbow"></p>
-<ul>
-<li>回复评论</li>
-</ul>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/post-img_url/202404300048647.png" alt="rainbow"></p>
-</li>
-</ul>
-<p><br></p>
-<hr>
-]]></content>
-      <categories>
-        <category>运维笔记</category>
-      </categories>
-      <tags>
-        <tag>Jekyll</tag>
-        <tag>LeanCloud</tag>
-        <tag>评论系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>宝塔面板部署NginxPulse：轻量级Nginx日志分析与可视化实战</title>
-    <url>/posts/335f12df/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果你用过宝塔面板跑网站，一定对 /www/wwwlogs/ 下的那些 access.log 不陌生——几 MB、几十 MB、甚至 GB 级的纯文本行，里面藏着你网站每一秒的真实流量，但你平时只会偶尔 tail -f 看一眼有没有被扫，更多时候它们只是安静地躺在磁盘里轮转、压缩、过期删除。</p>
-<p>NginxPulse 就是为解决这个问题而生的：一个轻量级 Nginx 访问日志分析与可视化面板，基于 Go + Vue3 构建，Docker 一键启动，零外部依赖，能把你的原始日志变成：</p>
-<p>• 📈 实时 PV / UV 趋势图（按分钟 / 小时 / 天聚合）</p>
-<p>• 🌍 IP 归属地热力图，快速锁定异常来源</p>
-<p>• 🔍 状态码分布（2xx / 3xx / 4xx / 5xx）、爬虫识别、客户端解析</p>
-<p>• 📊 Referer 来源分析、高频访问路径排行</p>
-<p>• 多站点统一管理，还支持 .gz 压缩历史日志直读</p>
-<h2 id="准备工作：搞清楚宝塔的-Nginx-日志在哪"><a href="#准备工作：搞清楚宝塔的-Nginx-日志在哪" class="headerlink" title="准备工作：搞清楚宝塔的 Nginx 日志在哪"></a>准备工作：搞清楚宝塔的 Nginx 日志在哪</h2><ul>
-<li><p>宝塔的网站访问日志默认不在 <code>/var/log/nginx/</code>，而是在：<code>/www/wwwlogs/</code> 所有站点的日志根目录</p>
-</li>
-<li><p>快速确认：</p>
-<p>打开宝塔面板 → 「网站」 → 任一站点「设置」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616224821275.png" alt="设置"></p>
-</li>
-<li><p>「配置文件」→ 「Ctrl+F」搜索关键字：<code>access_log</code>，就能看到宝塔实际写入的路径，通常是：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">access_log  /www/wwwlogs/example.com.log;</span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616225150194.png" alt="配置文件"></p>
-</li>
-</ul>
-<h2 id="安装-Docker（宝塔一键搞定）"><a href="#安装-Docker（宝塔一键搞定）" class="headerlink" title="安装 Docker（宝塔一键搞定）"></a>安装 Docker（宝塔一键搞定）</h2><ul>
-<li><p>登录宝塔面板 → 左侧导航 → 「Docker」 → 「立即安装」 → 「确认」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616232343198.png" alt="Docker安装"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616232551885.png" alt="确认安装"></p>
-</li>
-<li><p>等待安装完成<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616233733561.png" alt="等待安装完成"></p>
-</li>
-</ul>
-<h2 id="部署-NginxPulse（核心步骤）"><a href="#部署-NginxPulse（核心步骤）" class="headerlink" title="部署 NginxPulse（核心步骤）"></a>部署 NginxPulse（核心步骤）</h2><h3 id="NginxPulse-Docker-镜像搜索"><a href="#NginxPulse-Docker-镜像搜索" class="headerlink" title="NginxPulse Docker 镜像搜索"></a>NginxPulse Docker 镜像搜索</h3><ul>
-<li>左侧导航 → 「Docker」 → 「应用商店」 → 输入「nginxpulse」 → 「搜索」 → 「安装」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616234250805.png" alt="NginxPulse Docker镜像搜索"></li>
-</ul>
-<h3 id="NginxPulse-安装配置"><a href="#NginxPulse-安装配置" class="headerlink" title="NginxPulse 安装配置"></a>NginxPulse 安装配置</h3><ul>
-<li><p>修改日志目录 <code>/www/wwwlogs</code>。</p>
-<div class="note pink icon-padding flat"><i class="note-icon fas fa-gear"></i><p>注意：其余配置一定不要修改，不然将会出现不控的问题。</p>
-</div>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616235746516.png" alt="NginxPulse 安装配置"></p>
-</li>
-<li><p>等待安装完成<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617001400305.png" alt="等待安装完成"></p>
-</li>
-<li><p>安装完成后先停止容器<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617004153755.png" alt="停止容器"></p>
-</li>
-</ul>
-<h2 id="NginxPulse-Docker-镜像最后的设置"><a href="#NginxPulse-Docker-镜像最后的设置" class="headerlink" title="NginxPulse Docker 镜像最后的设置"></a>NginxPulse Docker 镜像最后的设置</h2><h3 id="文件夹权限配置（必须配置）"><a href="#文件夹权限配置（必须配置）" class="headerlink" title="文件夹权限配置（必须配置）"></a>文件夹权限配置（必须配置）</h3><ul>
-<li><p>左侧导航 → 「文件」 → 「文件地址栏」 → 输入「<code>/www/dk_project/dk_app/nginxpulse</code>」 → 进入安装目录<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617005433948.png" alt="安装目录"></p>
-</li>
-<li><p>严格的将 <code>configs</code>、<code>logs</code>、<code>nginxpulse_data</code> 文件夹的权限/所有者都设置为755/www。</p>
-</li>
-<li>严格的将 <code>pgdata</code> 文件夹的权限/所有者都设置为700/www。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617005717407.png" alt="权限/所有者"></li>
-</ul>
-<h3 id="放行防火墙端口"><a href="#放行防火墙端口" class="headerlink" title="放行防火墙端口"></a>放行防火墙端口</h3><ul>
-<li><p>左侧导航 → 「安全」 → 「添加端口规则」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617010529564.png" alt="添加端口规则"></p>
-</li>
-<li><p>端口：<code>8088</code>，备注：<code>NginxPulse服务</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617010547912.png" alt="设置端口"></p>
-</li>
-<li><p>设置完成后就可以去启动容器了<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617010750902.png" alt="启动容器"></p>
-<div class="note blue icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>如果用的是云服务商（阿里云/腾讯云/AWS），还要去云平台安全组放行 8088 端口。</p>
-</div>
-</li>
-</ul>
-<h2 id="首次访问-amp-面板配置"><a href="#首次访问-amp-面板配置" class="headerlink" title="首次访问 &amp; 面板配置"></a>首次访问 &amp; 面板配置</h2><ul>
-<li><p>浏览器输入 <code>IP:8088</code> 首次访问会进入配置页面</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://你的IP:8088</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置站点名称、域名列表（其他保持默认）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617220616361.png" alt="站点名称、域名列表"></p>
-</li>
-<li><p>数据库连接（默认）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617221421088.png" alt="数据库连接"></p>
-</li>
-<li><p>运行参数（默认）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617221442541.png" alt="运行参数"></p>
-</li>
-<li><p>保存并重启<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617221458129.png" alt="保存并重启"></p>
-</li>
-</ul>
-<h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><ul>
-<li>桌面端</li>
-<li><p>页面入口：<code>http://IP:8088</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617222011802.png" alt="桌面端"></p>
-</li>
-<li><p>手机端</p>
-</li>
-<li>页面入口：<code>http://IP:8088/m</code>（功能精简为概览/日报/实时/日志四页，首次初始化仍需在电脑端完成）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617222026802.png" alt="手机端"></li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>宝塔管 Web 运行，NginxPulse 管流量洞察，Docker 管部署隔离 —— 三者配合，10 分钟内你就能从「盲跑」升级到「看得见、查得清、反应得快」。</p>
-]]></content>
-      <categories>
-        <category>运维笔记</category>
-      </categories>
-      <tags>
-        <tag>Nginx</tag>
-        <tag>NginxPulse</tag>
-        <tag>宝塔面板</tag>
-        <tag>日志分析</tag>
-        <tag>监控面板</tag>
       </tags>
   </entry>
   <entry>
@@ -1423,10 +1331,172 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
         <category>运维笔记</category>
       </categories>
       <tags>
-        <tag>宝塔面板</tag>
         <tag>Cloudflare</tag>
         <tag>SSL</tag>
+        <tag>宝塔面板</tag>
         <tag>网络安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>宝塔面板部署NginxPulse：轻量级Nginx日志分析与可视化实战</title>
+    <url>/posts/335f12df/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果你用过宝塔面板跑网站，一定对 /www/wwwlogs/ 下的那些 access.log 不陌生——几 MB、几十 MB、甚至 GB 级的纯文本行，里面藏着你网站每一秒的真实流量，但你平时只会偶尔 tail -f 看一眼有没有被扫，更多时候它们只是安静地躺在磁盘里轮转、压缩、过期删除。</p>
+<p>NginxPulse 就是为解决这个问题而生的：一个轻量级 Nginx 访问日志分析与可视化面板，基于 Go + Vue3 构建，Docker 一键启动，零外部依赖，能把你的原始日志变成：</p>
+<p>• 📈 实时 PV / UV 趋势图（按分钟 / 小时 / 天聚合）</p>
+<p>• 🌍 IP 归属地热力图，快速锁定异常来源</p>
+<p>• 🔍 状态码分布（2xx / 3xx / 4xx / 5xx）、爬虫识别、客户端解析</p>
+<p>• 📊 Referer 来源分析、高频访问路径排行</p>
+<p>• 多站点统一管理，还支持 .gz 压缩历史日志直读</p>
+<h2 id="准备工作：搞清楚宝塔的-Nginx-日志在哪"><a href="#准备工作：搞清楚宝塔的-Nginx-日志在哪" class="headerlink" title="准备工作：搞清楚宝塔的 Nginx 日志在哪"></a>准备工作：搞清楚宝塔的 Nginx 日志在哪</h2><ul>
+<li><p>宝塔的网站访问日志默认不在 <code>/var/log/nginx/</code>，而是在：<code>/www/wwwlogs/</code> 所有站点的日志根目录</p>
+</li>
+<li><p>快速确认：</p>
+<p>打开宝塔面板 → 「网站」 → 任一站点「设置」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616224821275.png" alt="设置"></p>
+</li>
+<li><p>「配置文件」→ 「Ctrl+F」搜索关键字：<code>access_log</code>，就能看到宝塔实际写入的路径，通常是：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">access_log  /www/wwwlogs/example.com.log;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616225150194.png" alt="配置文件"></p>
+</li>
+</ul>
+<h2 id="安装-Docker（宝塔一键搞定）"><a href="#安装-Docker（宝塔一键搞定）" class="headerlink" title="安装 Docker（宝塔一键搞定）"></a>安装 Docker（宝塔一键搞定）</h2><ul>
+<li><p>登录宝塔面板 → 左侧导航 → 「Docker」 → 「立即安装」 → 「确认」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616232343198.png" alt="Docker安装"><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616232551885.png" alt="确认安装"></p>
+</li>
+<li><p>等待安装完成<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616233733561.png" alt="等待安装完成"></p>
+</li>
+</ul>
+<h2 id="部署-NginxPulse（核心步骤）"><a href="#部署-NginxPulse（核心步骤）" class="headerlink" title="部署 NginxPulse（核心步骤）"></a>部署 NginxPulse（核心步骤）</h2><h3 id="NginxPulse-Docker-镜像搜索"><a href="#NginxPulse-Docker-镜像搜索" class="headerlink" title="NginxPulse Docker 镜像搜索"></a>NginxPulse Docker 镜像搜索</h3><ul>
+<li>左侧导航 → 「Docker」 → 「应用商店」 → 输入「nginxpulse」 → 「搜索」 → 「安装」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616234250805.png" alt="NginxPulse Docker镜像搜索"></li>
+</ul>
+<h3 id="NginxPulse-安装配置"><a href="#NginxPulse-安装配置" class="headerlink" title="NginxPulse 安装配置"></a>NginxPulse 安装配置</h3><ul>
+<li><p>修改日志目录 <code>/www/wwwlogs</code>。</p>
+<div class="note pink icon-padding flat"><i class="note-icon fas fa-gear"></i><p>注意：其余配置一定不要修改，不然将会出现不控的问题。</p>
+</div>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260616235746516.png" alt="NginxPulse 安装配置"></p>
+</li>
+<li><p>等待安装完成<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617001400305.png" alt="等待安装完成"></p>
+</li>
+<li><p>安装完成后先停止容器<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617004153755.png" alt="停止容器"></p>
+</li>
+</ul>
+<h2 id="NginxPulse-Docker-镜像最后的设置"><a href="#NginxPulse-Docker-镜像最后的设置" class="headerlink" title="NginxPulse Docker 镜像最后的设置"></a>NginxPulse Docker 镜像最后的设置</h2><h3 id="文件夹权限配置（必须配置）"><a href="#文件夹权限配置（必须配置）" class="headerlink" title="文件夹权限配置（必须配置）"></a>文件夹权限配置（必须配置）</h3><ul>
+<li><p>左侧导航 → 「文件」 → 「文件地址栏」 → 输入「<code>/www/dk_project/dk_app/nginxpulse</code>」 → 进入安装目录<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617005433948.png" alt="安装目录"></p>
+</li>
+<li><p>严格的将 <code>configs</code>、<code>logs</code>、<code>nginxpulse_data</code> 文件夹的权限/所有者都设置为755/www。</p>
+</li>
+<li>严格的将 <code>pgdata</code> 文件夹的权限/所有者都设置为700/www。<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617005717407.png" alt="权限/所有者"></li>
+</ul>
+<h3 id="放行防火墙端口"><a href="#放行防火墙端口" class="headerlink" title="放行防火墙端口"></a>放行防火墙端口</h3><ul>
+<li><p>左侧导航 → 「安全」 → 「添加端口规则」<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617010529564.png" alt="添加端口规则"></p>
+</li>
+<li><p>端口：<code>8088</code>，备注：<code>NginxPulse服务</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617010547912.png" alt="设置端口"></p>
+</li>
+<li><p>设置完成后就可以去启动容器了<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617010750902.png" alt="启动容器"></p>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>如果用的是云服务商（阿里云/腾讯云/AWS），还要去云平台安全组放行 8088 端口。</p>
+</div>
+</li>
+</ul>
+<h2 id="首次访问-amp-面板配置"><a href="#首次访问-amp-面板配置" class="headerlink" title="首次访问 &amp; 面板配置"></a>首次访问 &amp; 面板配置</h2><ul>
+<li><p>浏览器输入 <code>IP:8088</code> 首次访问会进入配置页面</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://你的IP:8088</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置站点名称、域名列表（其他保持默认）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617220616361.png" alt="站点名称、域名列表"></p>
+</li>
+<li><p>数据库连接（默认）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617221421088.png" alt="数据库连接"></p>
+</li>
+<li><p>运行参数（默认）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617221442541.png" alt="运行参数"></p>
+</li>
+<li><p>保存并重启<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617221458129.png" alt="保存并重启"></p>
+</li>
+</ul>
+<h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><ul>
+<li>桌面端</li>
+<li><p>页面入口：<code>http://IP:8088</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617222011802.png" alt="桌面端"></p>
+</li>
+<li><p>手机端</p>
+</li>
+<li>页面入口：<code>http://IP:8088/m</code>（功能精简为概览/日报/实时/日志四页，首次初始化仍需在电脑端完成）<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260617222026802.png" alt="手机端"></li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>宝塔管 Web 运行，NginxPulse 管流量洞察，Docker 管部署隔离 —— 三者配合，10 分钟内你就能从「盲跑」升级到「看得见、查得清、反应得快」。</p>
+]]></content>
+      <categories>
+        <category>运维笔记</category>
+      </categories>
+      <tags>
+        <tag>宝塔面板</tag>
+        <tag>Nginx</tag>
+        <tag>NginxPulse</tag>
+        <tag>日志分析</tag>
+        <tag>监控面板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网心云OECT刷机指南：刷入 fnOS 打造低功耗私有云</title>
+    <url>/posts/7e43b1c0/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>抽屉里那台 <strong>网心云 OECT</strong>（One Ecosystem Computing Tool）又翻出来了。RK3566 四核 A55、4GB 内存、8GB eMMC，还带 2.5 寸 SATA 盘位，待机功耗，放以前跑网心云收益聊胜于无，现在纯吃灰太浪费。</p>
+<p>CasaOS 适合轻量面板，但想要正经 NAS 体验、SMB 共享、相册、影视、Docker、FN Connect 还是 fnOS（飞牛私有云）更对味。飞牛后来放出了适配 OEC/OECT 的 ARM 版镜像，这玩意儿终于能体面的当私有云用了。</p>
+<p>本篇记录从拆机短接到进 fnOS 网页端的完整过程。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始之前，请准备好以下工具：</p>
+<ul>
+<li><strong>硬件</strong>：<ul>
+<li>网心云 OECT 设备（确保能正常通电）</li>
+<li>一条 USB Type-C 数据线（用于线刷）</li>
+<li>电脑（安装刷机工具）</li>
+<li>螺丝刀（拆卸外壳）</li>
+<li>金属镊子或金属丝（短接刷机触点）</li>
+</ul>
+</li>
+<li><strong>软件</strong>：<ul>
+<li>WindTerm_2.7.0（SSH远程工具）</li>
+<li>DriverAssitant_v5.12（瑞芯微驱动）</li>
+<li>RkDevTool_v2.84（瑞芯微开发工具）</li>
+<li>MiniLoaderAll.bin（引导程序）</li>
+<li>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img（fnOS系统固件）</li>
+</ul>
+</li>
+</ul>
+<h2 id="刷机步骤"><a href="#刷机步骤" class="headerlink" title="刷机步骤"></a>刷机步骤</h2><h3 id="拆开网心云-OECT-设备"><a href="#拆开网心云-OECT-设备" class="headerlink" title="拆开网心云 OECT 设备"></a>拆开网心云 OECT 设备</h3><p>按箭头向下滑动打开盖板<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234201088.jpg" alt="向下滑动打开盖板"><br>拧下四颗螺丝向上推动将盖拆开<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234320935.jpg" alt="四颗螺丝"><br>再拧下内部十一颗螺丝<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234644275.jpg" alt="十一颗螺丝"><br>取出SATA硬盘接口小版<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234801659.jpg" alt="SATA硬盘接口"><br>就可以取下内部盖版</p>
+<h3 id="刷入-fnOS-ARM-版固件"><a href="#刷入-fnOS-ARM-版固件" class="headerlink" title="刷入 fnOS ARM 版固件"></a>刷入 fnOS ARM 版固件</h3><p>将下载好的 fnOS ARM 系统固件刷入OECT。具体步骤如下：</p>
+<ul>
+<li>打开 <code>DriverAssitant_v5.12</code> → <code>DriverInstall.exe</code> 安装驱动</li>
+<li><p>打开 <code>RkDevTool_v2.84</code>，导入 <code>MiniLoaderAll.bin</code> 引导程序和 <code>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img</code> 系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223843332.png" alt="引导程序和底层系统固件"></p>
+</li>
+<li><p>短接刷机触点<br>1、2 短接点只要短接其中一个即可，建议短接1点刷机成功的概率高一些<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001622431.jpg" alt="短接刷机触点"></p>
+</li>
+<li><p>用 USB Type-C 数据线连接设备底部的 USB Type-c 接口<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001659180.jpg" alt="Type-c接口"></p>
+</li>
+<li><p>三秒后松开短接点，软件就会显示发现一个MASKPROM设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223921034.png" alt="MASKPROM设备"></p>
+</li>
+<li><p>点击 <code>执行</code> 刷入引导程序和底层系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002648086.png" alt="执行"></p>
+</li>
+<li><p>待刷好，给设备通上电并插入网线链接路由器</p>
+</li>
+</ul>
+<h3 id="进入路由器查看访问IP地址"><a href="#进入路由器查看访问IP地址" class="headerlink" title="进入路由器查看访问IP地址"></a>进入路由器查看访问IP地址</h3><p>查找名为 <code>trim-3032</code> 或者 <code>fnos</code> 的设备，并记下其 IP 地址<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224040193.png" alt="trim-3032IP"></p>
+<h2 id="注册登录-fnOS"><a href="#注册登录-fnOS" class="headerlink" title="注册登录 fnOS"></a>注册登录 fnOS</h2><ul>
+<li>浏览器输入 IP 访问 Web 页面，注册账号登录<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224910599.png" alt="欢迎页"></li>
+<li><p>设置 <code>设备名称</code>、<code>设置帐号</code>、<code>设置密码</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225101939.png" alt="注册账号"></p>
+<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225237473.png" alt="首页"></p>
+</li>
+</ul>
+<h2 id="应用推荐"><a href="#应用推荐" class="headerlink" title="应用推荐"></a>应用推荐</h2><ul>
+<li>飞牛影视：刮削海报墙，家庭影音主力。</li>
+<li>飞牛相册：人脸/相册分类，手机备份替代云盘。</li>
+<li>Docker：继续跑 qBittorrent、Alist、青龙。</li>
+<li>SMB 共享：电脑、Apple TV、播放器直接读。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>OECT 刷 fnOS 之后，就是台低功耗级别的家庭私有云：内网 SMB 备份、相册同步、轻量影音、Docker 跑点小服务，比吃灰强一百倍。如果你手里也有闲置的 OECT，不妨跟着教程试试，体验一下自己动手打造家庭云的乐趣！</p>
+<p>需要注意的是，刷机有一定风险，请谨慎操作，并确保你已经备份了重要的数据。同时，刷机前确认拿的是 ARM 适配包，不是官网 X86 固件，如果首次启动进不去网页就 SSH 看端口。本文提供的信息仅供参考，具体的刷机过程可能因设备和系统版本的不同而有所差异。祝你刷机顺利！</p>
+<hr>
+<p>请关注公众号，并回复<code>“网心云fnOS”</code>以获取相关资源。<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png" alt="微信公众号"></p>
+]]></content>
+      <categories>
+        <category>硬件折腾</category>
+      </categories>
+      <tags>
+        <tag>家庭服务器</tag>
+        <tag>fnOS</tag>
+        <tag>私有云</tag>
+        <tag>网心云OECT</tag>
       </tags>
   </entry>
   <entry>
@@ -1764,76 +1834,6 @@ Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
         <tag>IPv6</tag>
         <tag>DDNS</tag>
         <tag>内网穿透</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网心云OECT刷机指南：刷入 fnOS 打造低功耗私有云</title>
-    <url>/posts/7e43b1c0/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>抽屉里那台 <strong>网心云 OECT</strong>（One Ecosystem Computing Tool）又翻出来了。RK3566 四核 A55、4GB 内存、8GB eMMC，还带 2.5 寸 SATA 盘位，待机功耗，放以前跑网心云收益聊胜于无，现在纯吃灰太浪费。</p>
-<p>CasaOS 适合轻量面板，但想要正经 NAS 体验、SMB 共享、相册、影视、Docker、FN Connect 还是 fnOS（飞牛私有云）更对味。飞牛后来放出了适配 OEC/OECT 的 ARM 版镜像，这玩意儿终于能体面的当私有云用了。</p>
-<p>本篇记录从拆机短接到进 fnOS 网页端的完整过程。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始之前，请准备好以下工具：</p>
-<ul>
-<li><strong>硬件</strong>：<ul>
-<li>网心云 OECT 设备（确保能正常通电）</li>
-<li>一条 USB Type-C 数据线（用于线刷）</li>
-<li>电脑（安装刷机工具）</li>
-<li>螺丝刀（拆卸外壳）</li>
-<li>金属镊子或金属丝（短接刷机触点）</li>
-</ul>
-</li>
-<li><strong>软件</strong>：<ul>
-<li>WindTerm_2.7.0（SSH远程工具）</li>
-<li>DriverAssitant_v5.12（瑞芯微驱动）</li>
-<li>RkDevTool_v2.84（瑞芯微开发工具）</li>
-<li>MiniLoaderAll.bin（引导程序）</li>
-<li>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img（fnOS系统固件）</li>
-</ul>
-</li>
-</ul>
-<h2 id="刷机步骤"><a href="#刷机步骤" class="headerlink" title="刷机步骤"></a>刷机步骤</h2><h3 id="拆开网心云-OECT-设备"><a href="#拆开网心云-OECT-设备" class="headerlink" title="拆开网心云 OECT 设备"></a>拆开网心云 OECT 设备</h3><p>按箭头向下滑动打开盖板<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234201088.jpg" alt="向下滑动打开盖板"><br>拧下四颗螺丝向上推动将盖拆开<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234320935.jpg" alt="四颗螺丝"><br>再拧下内部十一颗螺丝<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234644275.jpg" alt="十一颗螺丝"><br>取出SATA硬盘接口小版<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260606234801659.jpg" alt="SATA硬盘接口"><br>就可以取下内部盖版</p>
-<h3 id="刷入-fnOS-ARM-版固件"><a href="#刷入-fnOS-ARM-版固件" class="headerlink" title="刷入 fnOS ARM 版固件"></a>刷入 fnOS ARM 版固件</h3><p>将下载好的 fnOS ARM 系统固件刷入OECT。具体步骤如下：</p>
-<ul>
-<li>打开 <code>DriverAssitant_v5.12</code> → <code>DriverInstall.exe</code> 安装驱动</li>
-<li><p>打开 <code>RkDevTool_v2.84</code>，导入 <code>MiniLoaderAll.bin</code> 引导程序和 <code>fnos_Mainland-PE_arm_1.0.0_rk3566-null_258.img</code> 系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223843332.png" alt="引导程序和底层系统固件"></p>
-</li>
-<li><p>短接刷机触点<br>1、2 短接点只要短接其中一个即可，建议短接1点刷机成功的概率高一些<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001622431.jpg" alt="短接刷机触点"></p>
-</li>
-<li><p>用 USB Type-C 数据线连接设备底部的 USB Type-c 接口<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607001659180.jpg" alt="Type-c接口"></p>
-</li>
-<li><p>三秒后松开短接点，软件就会显示发现一个MASKPROM设备<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924223921034.png" alt="MASKPROM设备"></p>
-</li>
-<li><p>点击 <code>执行</code> 刷入引导程序和底层系统固件<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260607002648086.png" alt="执行"></p>
-</li>
-<li><p>待刷好，给设备通上电并插入网线链接路由器</p>
-</li>
-</ul>
-<h3 id="进入路由器查看访问IP地址"><a href="#进入路由器查看访问IP地址" class="headerlink" title="进入路由器查看访问IP地址"></a>进入路由器查看访问IP地址</h3><p>查找名为 <code>trim-3032</code> 或者 <code>fnos</code> 的设备，并记下其 IP 地址<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224040193.png" alt="trim-3032IP"></p>
-<h2 id="注册登录-fnOS"><a href="#注册登录-fnOS" class="headerlink" title="注册登录 fnOS"></a>注册登录 fnOS</h2><ul>
-<li>浏览器输入 IP 访问 Web 页面，注册账号登录<br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924224910599.png" alt="欢迎页"></li>
-<li><p>设置 <code>设备名称</code>、<code>设置帐号</code>、<code>设置密码</code><br><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225101939.png" alt="注册账号"></p>
-<p><img src="https://cdn.jsdmirror.com/gh/MingTechpro/drawing-bed/post-img_url/20260924225237473.png" alt="首页"></p>
-</li>
-</ul>
-<h2 id="应用推荐"><a href="#应用推荐" class="headerlink" title="应用推荐"></a>应用推荐</h2><ul>
-<li>飞牛影视：刮削海报墙，家庭影音主力。</li>
-<li>飞牛相册：人脸/相册分类，手机备份替代云盘。</li>
-<li>Docker：继续跑 qBittorrent、Alist、青龙。</li>
-<li>SMB 共享：电脑、Apple TV、播放器直接读。</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>OECT 刷 fnOS 之后，就是台低功耗级别的家庭私有云：内网 SMB 备份、相册同步、轻量影音、Docker 跑点小服务，比吃灰强一百倍。如果你手里也有闲置的 OECT，不妨跟着教程试试，体验一下自己动手打造家庭云的乐趣！</p>
-<p>需要注意的是，刷机有一定风险，请谨慎操作，并确保你已经备份了重要的数据。同时，刷机前确认拿的是 ARM 适配包，不是官网 X86 固件，如果首次启动进不去网页就 SSH 看端口。本文提供的信息仅供参考，具体的刷机过程可能因设备和系统版本的不同而有所差异。祝你刷机顺利！</p>
-<hr>
-<p>请关注公众号，并回复<code>“网心云fnOS”</code>以获取相关资源。<br><img src="https://cdn.jsdmirror.com/gh/MingTechPro/drawing-bed/avatar-bg_url/202405061722781.png" alt="微信公众号"></p>
-]]></content>
-      <categories>
-        <category>硬件折腾</category>
-      </categories>
-      <tags>
-        <tag>家庭服务器</tag>
-        <tag>fnOS</tag>
-        <tag>私有云</tag>
-        <tag>网心云OECT</tag>
       </tags>
   </entry>
   <entry>

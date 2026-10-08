@@ -1,0 +1,67 @@
+.status-wrap-title {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 1.72em;
+}
+
+.status-wrap-title span {
+  position: relative;
+  padding-left: 10px;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  background-image: radial-gradient(
+    circle at center,
+    var(--btn-bg) 0%,
+    var(--btn-bg) 100%
+  );
+  background-size: 0% 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition:
+    background-size 0.6s ease-out,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  background-size: 200% 200%;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon i {
+  font-size: 2rem;
+  display: block;
+}
+
+.stat-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--font-color);
+}
+
+.stat-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--font-color);
+}
