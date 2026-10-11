@@ -1,11 +1,11 @@
 (function () {
   /**
-   * 僅在 status 頁面執行
+   * 仅在 status 页面执行
    */
   if (location.pathname.replace(/\/+$/, "") !== "/status") return;
 
   /**
-   * 網頁運行時間
+   * 网页运行时间
    */
 
   const addRuntime = () => {
@@ -19,7 +19,7 @@
   };
 
   /**
-   * 最後一次更新時間
+   * 最后一次更新时间
    */
   const addLastPushDate = () => {
     const $lastPushDateItem = document.getElementById("status-last-push-date");
@@ -32,7 +32,7 @@
   };
 
   /**
-   * status 頁專屬刷新函數
+   * status 页面专属刷新函数
    */
   const refreshStatusFn = () => {
     addRuntime();
@@ -40,14 +40,7 @@
   };
 
   /**
-   * PJAX 兼容（Butterfly 必須）
-   */
-  if (window.btf && typeof btf.addGlobalFn === "function") {
-    btf.addGlobalFn("pjaxComplete", refreshStatusFn, "refreshStatusFn");
-  }
-
-  /**
-   * 首次加載執行
+   * 首次加载执行
    */
   const boot = () => {
     if (window.btf) {
